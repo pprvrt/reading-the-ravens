@@ -1,0 +1,14 @@
+{
+  "name": "reading-the-ravens",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An interactive, NYT-style field guide to modern football: animated plays, coverages, fronts and pre-snap reads, explained through the 2026 Baltimore Ravens.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node tests/validate.cjs && node tests/occlusion.cjs && node tests/teams.cjs",
+    "test:browser": "python tests/browser.py interact"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

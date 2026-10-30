@@ -1,0 +1,638 @@
+
+<div class="topbar" id="topbar">
+  <div class="topbar-in">
+    <div class="brand">Reading the <span>Ravens</span></div>
+    <div class="now" id="now">A field guide to modern football</div>
+    <label class="sr" for="jump" style="position:absolute;left:-9999px">Jump to chapter</label>
+    <select id="jump" aria-label="Jump to chapter"><option value="">Chapters</option></select>
+  </div>
+  <div class="progress" id="progress"></div>
+</div>
+
+<main>
+<header class="hero">
+  <div class="col">
+    <div class="kicker">The Field Guide · 2026 Baltimore Ravens</div>
+    <h1>How to Watch Football Like a Coach</h1>
+    <p class="dek">Every snap is an argument between two plans, settled in about four seconds. This guide teaches the vocabulary, the geometry and the tells that let you see the argument, using the plays, players and problems of Jesse Minter's first Ravens team.</p>
+    <div class="byline"><span><b>An interactive guide</b></span><span>Examples from the 2026 Ravens</span></div>
+  </div>
+  <div id="f-boot"></div>
+</header>
+
+<div class="col">
+<p class="lead">On the first snap of the Declan Doyle era, seven Indianapolis defenders stepped toward a running back who never had the ball. The play above is the whole of modern football in miniature: the offense showed the defense a picture it had to respect, the defense reacted correctly to that picture, and the reaction was the mistake. Zay Flowers caught the ball behind them and ran 49 yards.</p>
+<p>To a casual viewer that play is a nice throw and a broken tackle. To a coach it is a sequence of decisions that started before anyone lined up: which eleven players to send onto the field, where to put them, how to make the first half-second look like something else. Learning to see those decisions changes the sport from a blur around the ball into a contest you can follow, and sometimes predict.</p>
+<p>This guide builds that vision step by step. Part I is the language: the field, personnel, formations, fronts, coverages and routes, each explained from zero. Part II and Part III apply it to the 2026 Ravens offense and defense, with plays reconstructed from this season. Part IV puts it together into a routine for reading a play before the snap and in the first second after it. Every <span class="g" data-g="glossary-term">underlined term</span> has a definition on hover or tap, and every diagram can be played, paused and scrubbed.</p>
+<div class="assume"><b>How the diagrams were made</b>Plays labeled with a game and quarter are schematic reconstructions from published film reviews and charting (sources listed at the end). The facts those sources establish are stated under each diagram; everything else, typically exact depths, defender alignments and the routes of uninvolved receivers, is illustrative. Plays labeled "illustration" or "concept" teach a principle and are not specific snaps. The matchup lab simulates defenders with simplified rules.</div>
+<nav class="toc" aria-label="Contents" id="toc"><ol></ol></nav>
+</div>
+
+<!-- ===================== PART I ===================== -->
+<div class="col part-open" data-part="Part I · The Language">
+  <span class="kicker">Part I</span>
+  <h2>The Language of the Game</h2>
+  <p class="dek">Six building blocks. Each one is a question a coach asks in the seconds before every snap.</p>
+</div>
+
+<section class="chapter" id="ch-field" data-title="The field and the eleven">
+<div class="col">
+<span class="chapnum"><b>1</b> · The field and the eleven</span>
+<h2>The field is a grid, and every line on it means something</h2>
+<p>An American football field is 100 yards between goal lines and 53⅓ yards wide. The offense has four plays, called <span class="g" data-g="down">downs</span>, to advance the ball ten yards. Succeed and the count resets; fail and the ball goes to the other team. Almost every strategic decision flows from that rule: a team facing third-and-1 and a team facing third-and-12 are playing different games.</p>
+<p>Before each snap the ball sits on the <span class="g" data-g="los">line of scrimmage</span>. On television it is drawn in blue; the target, the <span class="g" data-g="line-to-gain">line to gain</span>, is the yellow line. Neither exists on the real grass. Two rows of tick marks, the <span class="g" data-g="hash">hashes</span>, run the length of the field; when a play ends outside them the ball is moved back to the nearer hash. That matters more than it seems: a ball on the left hash creates a short, or <span class="g" data-g="boundary">boundary</span>, side and a wide, or <span class="g" data-g="field-side">field</span>, side, and both teams adjust their plans to it.</p>
+</div>
+<div id="f-field"></div>
+<div class="col">
+<h3>Eleven against eleven</h3>
+<p>The offense must put at least seven players on the line of scrimmage. The five interior linemen (left tackle, left guard, center, right guard, right tackle) are not allowed to catch forward passes; everyone else who is at the end of the line or behind it is an eligible receiver. Coaches name the skill players with letters, and the letters travel across teams and decades:</p>
+</div>
+<div class="wide"><div class="compare">
+  <div><h6>Offense</h6><ul>
+    <li><b>QB</b> Quarterback. Lamar Jackson, two-time MVP, in his ninth season.</li>
+    <li><b>RB</b> Running back, sometimes called the tailback. Derrick Henry, 32.</li>
+    <li><b>FB</b> Fullback: a blocking back who lines up in front of the tailback.</li>
+    <li><b>Y</b> The tight end: half lineman, half receiver. Mark Andrews.</li>
+    <li><b>X</b> Split end: the receiver on the line, usually away from the tight end.</li>
+    <li><b>Z</b> Flanker: the receiver off the line, usually on the tight end's side.</li>
+    <li><b>H</b> or <b>F</b> The slot receiver or second tight end, a movable piece.</li>
+  </ul></div>
+  <div><h6>Defense</h6><ul>
+    <li><b>DL</b> Defensive linemen: ends (E) outside, tackles (T) inside; the tackle over the center is the nose (N).</li>
+    <li><b>EDGE / OLB</b> Outside rushers who may stand up. Trey Hendrickson, Tavius Robinson, Mike Green.</li>
+    <li><b>LB</b> Linebackers: Mike (middle), Will (weak side), Sam (strong side). Roquan Smith is the Mike.</li>
+    <li><b>CB</b> Cornerbacks cover the outside receivers. Nate Wiggins, Marlon Humphrey.</li>
+    <li><b>S</b> Safeties: free safety (FS) and strong safety (SS). Kyle Hamilton, Malaki Starks, Jaylinn Hawkins.</li>
+    <li><b>Nickel / Dime</b> The fifth and sixth defensive backs.</li>
+  </ul></div>
+</div></div>
+<div class="col">
+<p>One more rule shapes everything: once the offense is set, only one player may be moving at the snap, and he may not be moving toward the line. That single player in <span class="g" data-g="motion">motion</span> is one of the richest sources of information on the field, as later chapters show.</p>
+</div>
+</section>
+
+<section class="chapter" id="ch-personnel" data-title="Personnel">
+<div class="col">
+<span class="chapnum"><b>2</b> · Personnel</span>
+<h2>The first read happens on the sideline</h2>
+<p>Before a formation exists, a coach reads who is running onto the field. Offenses describe their <span class="g" data-g="personnel">personnel</span> with two digits: the number of running backs, then the number of tight ends. Receivers are whatever remains of the five eligible skill players. <span class="code">11</span> means one back, one tight end, three receivers. <span class="code">12</span> means one back, two tight ends, two receivers. <span class="code">21</span> means two backs (a fullback and a tailback), one tight end, two receivers.</p>
+<p>Defenses substitute in response. Against three receivers they want five defensive backs; against heavy groupings they want linebackers and linemen. The offense knows this, so personnel is a lever: put two tight ends on the field and the defense must choose between bigger players (who struggle to cover) and smaller ones (who struggle to tackle). Then the offense attacks whichever weakness it is given.</p>
+</div>
+<div id="f-pers"></div>
+<div class="col">
+<p>The Ravens have long been the league's heaviest offense. Over the five seasons through 2025 they used 22 personnel (two backs, two tight ends) on 14.4% of snaps, almost twice as often as any other franchise. Doyle kept the weight but changed where it comes from. In the first seven games of 2026 the fullback all but disappeared (21 and 22 personnel together about 1% of plays) and the extra bodies became tight ends: two or more tight ends were on the field for 47% of plays, third-heaviest in the league, against a league average of about 35%.</p>
+<figure class="barfig"><figcaption>Ravens offensive personnel, first seven games of 2026</figcaption><div class="bars"><div class="bar-row"><span class="bl">11 personnel<small>1 RB · 1 TE · 3 WR</small></span><span class="bt"><i style="width:52%"></i></span><span class="bv">52%</span></div><div class="bar-row"><span class="bl">12 personnel<small>1 RB · 2 TE · 2 WR</small></span><span class="bt"><i style="width:32%"></i></span><span class="bv">32%</span></div><div class="bar-row"><span class="bl">13 personnel<small>1 RB · 3 TE · 1 WR</small></span><span class="bt"><i style="width:14%"></i></span><span class="bv">14%</span></div><div class="bar-row"><span class="bl">21 / 22 personnel<small>fullback groupings</small></span><span class="bt"><i style="width:1%"></i></span><span class="bv">~1%</span></div><div class="bar-row"><span class="bl">2+ tight ends<small>Ravens vs. league</small></span><span class="bt"><i style="width:47%"></i><b class="lg" style="left:35%" title="League average 35%"></b></span><span class="bv">47%</span></div></div><p class="bar-key"><span class="k1"></span>Ravens <span class="k2"></span>League average</p><p class="note">Share of offensive plays. Source: Sharp Football Analysis personnel tracker (424 plays); league 2+ TE average as published there. The league figure had risen every year from 26% in 2023 to 33% in 2025.</p></figure>
+<p>Minter's defense answers personnel with its own twist: a third safety where most teams use a third cornerback, and very little base defense at all. In the Week 1 win at Indianapolis the Ravens played their traditional base 3-4 on two snaps out of 53. Over the first seven games they had five or more defensive backs on the field for 81% of snaps, third-most in the league; the average defense is in a <span class="g" data-g="sub-package">sub package</span> about two-thirds of the time.</p>
+<div class="stats">
+  <div class="stat"><div class="n">2</div><div class="l">Base-defense snaps in Week 1 (of 53)</div></div>
+  <div class="stat"><div class="n">28</div><div class="l">Big-nickel snaps: 2 DL, 2 OLB, 2 ILB, 2 CB, 3 S</div></div>
+  <div class="stat"><div class="n">23</div><div class="l">Dime snaps (six defensive backs)</div></div>
+  <div class="stat"><div class="n">81%</div><div class="l">Snaps with 5+ defensive backs, first seven games (3rd in NFL; average ≈67%)</div></div>
+</div>
+<p class="note"><b>Sources:</b> Week 1 package counts from Filmstudy Baltimore (penalty and kneel snaps excluded); sub-package rate from Sharp Football Analysis defensive tendencies; 22-personnel history from TSN.</p>
+</div>
+<div id="q1"></div>
+</section>
+
+<section class="chapter" id="ch-formation" data-title="Formations and motion">
+<div class="col">
+<span class="chapnum"><b>3</b> · Formations, strength and motion</span>
+<h2>Same eleven players, a hundred different questions</h2>
+<p>Personnel is <em>who</em>; the <span class="g" data-g="formation">formation</span> is <em>where</em>. The same 11 personnel can line up with two receivers on each side (<span class="code">2x2</span>), three on one side (<span class="code">3x1</span>, also called <span class="g" data-g="trips">trips</span>), bunched tightly together (<span class="g" data-g="bunch">bunch</span>), or with the back flexed out so nobody is behind the quarterback (<span class="g" data-g="empty">empty</span>).</p>
+<p>Every formation has a <span class="g" data-g="strength">strength</span>. The run strength is the side with the tight end, where the offense has more blockers. The pass strength is the side with more receivers. Defenses set their front to one and their coverage to the other, which is why offenses love formations where the two disagree.</p>
+<h3>Under center, shotgun, pistol</h3>
+<p>The quarterback's alignment matters as much as the receivers'. In the <span class="g" data-g="shotgun">shotgun</span> he stands about five yards deep and sees the defense the whole time. <span class="g" data-g="under-center">Under center</span> he takes the snap directly from the center and must turn his back to the defense to hand off or fake. That sounds like a disadvantage, but it is exactly what makes play-action believable: linebackers cannot see whether the back has the ball. The <span class="g" data-g="pistol">pistol</span> splits the difference, with the quarterback at four yards and the back directly behind him.</p>
+<p>This is the single biggest change in the 2026 Ravens offense. Lamar Jackson had operated mostly from the shotgun, yet since 2024 he had ranked first in the league in expected points added per play and success rate on his limited under-center snaps. Doyle put him under center on roughly two of every three snaps in the opener. Over the first seven games, three of them started by Tyler Huntley, the rate settled at 45% of plays, ninth in the league; the average offense is under center about 39% of the time.</p>
+<h3>Unbalanced lines</h3>
+<p>Usually there are two offensive linemen on each side of the center. An <span class="g" data-g="unbalanced">unbalanced</span> line moves a tackle to the other side, creating three blockers to one side and one to the other. Defenses must recognize it in seconds and shift, or they will be outnumbered where the play is going. The Ravens' first touchdown of the season came from exactly this look; it is diagrammed in Part II.</p>
+<h3>Motion and shifts: making the defense declare</h3>
+<p>A <span class="g" data-g="shift">shift</span> moves several players at once before the snap; motion moves one player while the ball is about to be snapped. Both have three purposes. They change the strength, so a defense aligned to one formation must realign to another. They create better angles for blocks or routes. And they force the defense to reveal itself: if a defender runs across the field with the man in motion, the coverage is almost certainly man-to-man. If the defenders slide over a step and pass him along, it is zone. Part IV turns that into a habit.</p>
+<p>Doyle's offense is described as "motion-heavy," and the charting agrees: across the first seven games the Ravens put a player in motion before the snap on half of their plays, ninth in the league against an average of about 47%. The busiest offenses, San Francisco and Miami, are near 60%. The complexity has a cost: through four games the offense also produced 26 of the team's 39 penalties, which the staff has said it will accept.</p>
+<h3>Tempo and cadence</h3>
+<p>The offense also controls <em>when</em> the snap happens. Huddling takes time and lets the defense substitute to match the personnel it sees. A <span class="g" data-g="no-huddle">no-huddle</span> offense lines up at once, freezing the defense in whatever personnel it had on the field and leaving little time for disguise. The pace ranges from a deliberate "check-with-me," in which the quarterback looks to the sideline after seeing the defense, to a full hurry-up. The Ravens rarely use it: 3.9% of their snaps in the first seven games came without a huddle, tied for 22nd, against a league average near 6.5%. The exception was deliberate. The first snap of the season, the bootleg at the top of this page, came from the no-huddle, before the Colts were settled.</p>
+<p>The <span class="g" data-g="cadence">cadence</span> is the quarterback's snap count. Varying it, or barking a <span class="g" data-g="hard-count">hard count</span> without snapping, keeps pass rushers from timing their get-off and can draw them offside for five free yards. On the road, crowd noise forces a silent count, and rushers watch the ball instead of listening for it.</p>
+</div>
+</section>
+
+<section class="chapter" id="ch-front" data-title="Gaps and the box">
+<div class="col">
+<span class="chapnum"><b>4</b> · Gaps and the box</span>
+<h2>Run defense is arithmetic</h2>
+<p>The spaces between offensive linemen are called <span class="g" data-g="gaps">gaps</span>, lettered from the center outward: A between center and guard, B between guard and tackle, C outside the tackle, D outside the tight end. A run defense is sound when every gap has a defender responsible for it. That assignment is the <span class="g" data-g="fit">run fit</span>.</p>
+<p>Defensive linemen describe their alignment with <span class="g" data-g="technique">technique</span> numbers. A 0-technique is head-up on the center, a 1 is shaded to the center's shoulder, a 3 is on the outside shoulder of a guard, a 5 on the outside shoulder of a tackle, a 9 well outside a tight end. A "3-technique" is shorthand for the quick interior pass rusher who lines up there; Nnamdi Madubuike has played that role for Baltimore for years.</p>
+</div>
+<div id="f-gaps"></div>
+<div class="col">
+<h3>Count the box</h3>
+<p>The <span class="g" data-g="box">box</span> is the area roughly from tight end to tight end and about seven yards deep. Coaches count it on every snap. An offense with five linemen and one tight end has six blockers; if the defense puts seven men in the box, it has one more defender than the offense has blockers. That extra defender, the <span class="g" data-g="plus-one">plus-one</span>, is unblocked by design and will tackle the runner.</p>
+<p>The offense can fix the count two ways. It can throw, because a seventh or eighth man in the box was taken from the coverage. Or it can make the quarterback a runner, because a quarterback who might keep the ball forces the defense to account for an eleventh offensive player. That is the deepest reason Lamar Jackson is so hard to defend: with him, the run game is eleven against eleven, while most offenses play ten against eleven.</p>
+<div class="pull">Every eighth defender near the line is one fewer defender in coverage. Football is a blanket that is never big enough.</div>
+<p>The numbers show both sides of that trade around the Ravens. Opponents stack the box against Derrick Henry: 29% of his carries in the first seven games came against eight or more defenders, eighth-highest among 40 qualifying backs (the average was about 23%), and only a third came against a <span class="g" data-g="light-box">light box</span> of six or fewer, 27th of 29. The Ravens' own defense makes the opposite choice. It played a light box on 55% of snaps, second-most in the league against an average of 43%, and a heavy box of eight or more on only 16%, second-fewest. Minter accepts fewer run defenders in exchange for more players in coverage.</p>
+<figure class="barfig"><figcaption>Box counts, first seven games of 2026</figcaption><div class="bars"><div class="bar-row"><span class="bl">Henry vs. 8+ in box<small>stacked box, share of carries</small></span><span class="bt"><i style="width:29.3%"></i><b class="lg" style="left:22.9%" title="League average 22.9%"></b></span><span class="bv">29%</span></div><div class="bar-row"><span class="bl">Henry vs. ≤6 in box<small>light box, share of carries</small></span><span class="bt"><i style="width:33.8%"></i><b class="lg" style="left:44.5%" title="League average 44.5%"></b></span><span class="bv">34%</span></div><div class="bar-row"><span class="bl">Ravens D: light box<small>≤6 defenders, share of snaps</small></span><span class="bt"><i style="width:55.3%"></i><b class="lg" style="left:43.0%" title="League average 43.0%"></b></span><span class="bv">55%</span></div><div class="bar-row"><span class="bl">Ravens D: heavy box<small>8+ defenders, share of snaps</small></span><span class="bt"><i style="width:16.2%"></i><b class="lg" style="left:25.2%" title="League average 25.2%"></b></span><span class="bv">16%</span></div></div><p class="bar-key"><span class="k1"></span>Ravens <span class="k2"></span>League average</p><p class="note">Henry: FTN charting via nflverse (muffed.ai); league marks are the mean of qualifying backs. Ravens defense: Sharp Football Analysis; league marks are the 32-team mean.</p></figure>
+</div>
+</section>
+
+<section class="chapter" id="ch-fronts" data-title="Defensive fronts">
+<div class="col">
+<span class="chapnum"><b>5</b> · Defensive fronts</span>
+<h2>Where the big men stand, and why "4-3" no longer tells you</h2>
+<p>A <span class="g" data-g="front">front</span> is the alignment of the players near the line: the defensive linemen, the edge players and the linebackers behind them. Coverage decides who guards the receivers; the front decides who fills each gap against the run and who rushes the passer.</p>
+<p>Broadcasts still describe defenses as "4-3" or "3-4", but those labels mostly describe <em>personnel</em>, the number of linemen and linebackers on the roster sheet. Once an outside linebacker stands on the line of scrimmage, a 3-4 team and a 4-3 team can look identical. And the base defense those labels describe is now rare: the Ravens were in base personnel on 2 of 53 snaps in the 2026 opener and had five or more defensive backs on the field for 81% of snaps over seven games. What viewers mostly see are nickel and dime fronts. The useful question is not "how many linemen?" but "where are they, and which offensive linemen have nobody in front of them?"</p>
+<h3>Three ideas that unlock every front</h3>
+<ol class="rule-list">
+  <li data-n="1"><b>Odd or even.</b> Look at the center. If a defender is head-up on him (a 0-technique nose), it is an <span class="g" data-g="odd-even">odd front</span>. If nobody is directly over the center, it is an even front. This is the fastest front read in football.</li>
+  <li data-n="2"><b>Covered or uncovered.</b> An offensive lineman with a defensive lineman aligned on him is <span class="g" data-g="covered">covered</span>; one with nobody on him is uncovered. Uncovered linemen are the offense's free resources: they can double-team or climb straight to a linebacker. The diagrams below ring them in gold.</li>
+  <li data-n="3"><b>One-gap or two-gap.</b> A one-gap lineman attacks a single gap at the snap. A <span class="g" data-g="two-gap">two-gap</span> lineman engages the blocker in front of him and controls both gaps on either side, reading where the ball goes. Two-gap fronts need big, strong linemen; one-gap fronts need quickness.</li>
+</ol>
+<p>In each diagram the dashed lines show which gap each defender owns (the <span class="g" data-g="fit">run fit</span>), the small numbers under the linemen are their <span class="g" data-g="technique">techniques</span>, and the offense is the same in every case so only the front changes: one tight end on the right, which makes the right side the strong side.</p>
+</div>
+<div id="f-fronts"></div>
+<div class="col">
+<h3>Reading the front from the couch</h3>
+<ol class="rule-list">
+  <li data-n="1"><b>Count the hands on the ground.</b> Linemen in a three-point stance are run-first; edge players standing up are often outside linebackers who may rush or drop.</li>
+  <li data-n="2"><b>Find the nose.</b> Head-up on the center means odd (3-4, tite, bear); shaded or absent means even (over, under, nickel 4-2-5).</li>
+  <li data-n="3"><b>Find the 3-technique.</b> On the tight end side it is an over front; away from it, an under front. He is usually the best interior pass rusher.</li>
+  <li data-n="4"><b>Check the guards.</b> Both covered means a bear front and an inside run is in trouble. Both uncovered means an odd front: watch whether the guards can reach the linebackers.</li>
+  <li data-n="5"><b>Measure the width of the ends.</b> Wide-9 ends signal a pass-rush mindset and a soft spot inside them.</li>
+  <li data-n="6"><b>Watch for the late bump.</b> When the offense motions or shifts, the front must move with it. A front that does not adjust in time leaves a gap with no owner, the opening the Ravens' unbalanced-line touchdown in Week 1 was built to exploit.</li>
+</ol>
+<h3>How offenses attack a front</h3>
+<p>Every front leaves something open, and run schemes are chosen to match. Against odd fronts, offenses double-team the nose and ends and send the uncovered guards to the linebackers. Against tite fronts, which clog the inside, they run outside zone and perimeter plays. Against wide-9 ends, they trap and pull through the wide C gap. Against bear fronts, they throw. The example below shows the first case.</p>
+</div>
+<div id="f-oddiz"></div>
+<div class="col">
+<h3>Box or spill: where the defense sends the run</h3>
+<p>A front also decides what to do with a run once it reaches the edge: squeeze it back inside, or push it outside. The decision belongs to the edge defender who meets the first pulling or kick-out blocker. In a <span class="g" data-g="box-spill">box</span> (or "squeeze") technique he takes the blocker on with his inside shoulder and keeps his outside arm free, turning the run back toward the linebackers. In a spill technique he dives underneath the blocker, wrecking the pull and forcing the runner to bounce wide, where faster linebackers and safeties run him down. Neither is correct in the abstract. Spilling rewards speed behind the line; boxing rewards size and discipline at the point of attack. On a power run, watch the end: if the pulling guard has to go around him, the defense is boxing; if the end ducks inside the guard, it is spilling.</p>
+</div>
+<div data-plates="fits" data-title="Playbook · Run fits" data-sub="The same power run against two edge techniques" data-key></div>
+</section>
+
+<section class="chapter" id="ch-coverage" data-title="Coverage">
+<div class="col">
+<span class="chapnum"><b>6</b> · Coverage</span>
+<h2>Man, zone, and the safeties that give it away</h2>
+<p>In <span class="g" data-g="man">man coverage</span> each defender is assigned a receiver and follows him wherever he goes. In <span class="g" data-g="zone">zone coverage</span> each defender is assigned an area and covers whoever enters it. Modern defenses mostly play <span class="g" data-g="match">match</span> coverage, a hybrid: defenders start in zones, then lock onto receivers according to rules ("if the slot goes vertical, he is yours").</p>
+<p>Coverages are numbered by how many defenders divide the deep part of the field. The most important pre-snap read in football follows from that: look at the safeties. One safety deep in the middle means the <span class="g" data-g="mofc">middle of the field is closed</span>, which limits the coverage to Cover 1 or Cover 3 (or Cover 0 if no one is deep at all). Two safeties deep means the <span class="g" data-g="mofo">middle of the field is open</span>: Cover 2, Cover 4 or Cover 6.</p>
+</div>
+<div class="wide tbl-wrap"><table>
+  <thead><tr><th>Coverage</th><th>Deep</th><th>Under</th><th>Before the snap</th><th>At the snap</th><th>Weak spot</th></tr></thead>
+  <tbody>
+    <tr><td>Cover 0</td><td>0</td><td>All man</td><td>No deep safety; extra defenders near the line</td><td>Everyone runs with a receiver; six or more rush</td><td>Any quick throw; any win deep is a touchdown</td></tr>
+    <tr><td>Cover 1</td><td>1</td><td>Man + robber</td><td>One high safety; corners pressed</td><td>Corners turn and run; LB follows the back</td><td>Crossing routes, rubs, double moves</td></tr>
+    <tr><td>Cover 2</td><td>2 halves</td><td>5 zones</td><td>Two safeties at 12–14 yds; corners at 5 with outside leverage</td><td>Corners squat in the flat; safeties widen</td><td>Sideline hole between corner and safety; seams</td></tr>
+    <tr><td>Cover 3</td><td>3 thirds</td><td>4 zones</td><td>One high safety; corners off at about 7</td><td>Corners bail to deep thirds</td><td>Seams, flood, curl-flat conflict</td></tr>
+    <tr><td>Cover 4 (quarters)</td><td>4 quarters</td><td>3 zones</td><td>Two safeties at 9–11 yds, close to the box</td><td>Safeties pedal and read the slot; corners stay on top</td><td>Short routes underneath; dig behind the safety</td></tr>
+    <tr><td>Cover 6</td><td>½ + ¼ + ¼</td><td>4 zones</td><td>Two-high, but one side looks different</td><td>Cover 2 on one side, quarters on the other</td><td>The Cover 2 half</td></tr>
+  </tbody>
+</table></div>
+<div id="f-covs"></div>
+<div class="col">
+<h3>Why defenses lie</h3>
+<p>Because the safeties give the coverage away, good defenses disguise them. They show two-high and rotate to one-high at the snap, or the reverse. The family tree Minter belongs to, built by Vic Fangio, made this its signature: start nearly every snap in a two-high shell, keep two defenders deep to prevent big plays, and use the snap itself to turn a predictable picture into something else. Part III shows how the 2026 Ravens do it.</p>
+<p>The Ravens' charting fits that lineage. After the snap the middle of the field was open (two deep safeties) on 61% of their defensive snaps in the first seven games, third-highest in the league; the average defense splits almost exactly evenly between open and closed. They played zone on about 79% of snaps and man on 16%, against league averages near 73% and 19%. A quarterback facing Baltimore should expect two-high zone first, and most of the guessing is about which two-high zone.</p>
+<figure class="barfig"><figcaption>Ravens coverage tendencies, first seven games of 2026</figcaption><div class="bars"><div class="bar-row"><span class="bl">Middle of field open<small>two deep safeties after the snap</small></span><span class="bt"><i style="width:61.4%"></i><b class="lg" style="left:47.3%" title="League average 47.3%"></b></span><span class="bv">61%</span></div><div class="bar-row"><span class="bl">Zone coverage<small>share of dropbacks</small></span><span class="bt"><i style="width:78.6%"></i><b class="lg" style="left:73.3%" title="League average 73.3%"></b></span><span class="bv">79%</span></div><div class="bar-row"><span class="bl">Man coverage<small>share of dropbacks</small></span><span class="bt"><i style="width:15.9%"></i><b class="lg" style="left:18.7%" title="League average 18.7%"></b></span><span class="bv">16%</span></div></div><p class="bar-key"><span class="k1"></span>Ravens <span class="k2"></span>League average</p><p class="note">Source: Sharp Football Analysis coverage-scheme tracker. League marks are 32-team means; rates do not sum to 100% because some snaps are not charted as either.</p></figure>
+<h3>Variations every defense carries</h3>
+<p>The six coverages in the gallery are families, and each has variants. Two matter most on Sundays. <span class="g" data-g="tampa2">Tampa 2</span> fixes the hole in Cover 2's deep middle by sending the middle linebacker into it. <span class="g" data-g="cover2-man">Cover 2 man</span> keeps two deep safeties but plays man underneath, so every short route has a defender sitting on it and help behind him. Cover 3 comes in three flavors, named for who rotates down to the flat: <span class="g" data-g="sky">sky</span> (a safety), buzz (a safety to the hook, a linebacker to the flat) and cloud (the corner). Each moves the soft spot. The rotation is what the Ravens' disguise hides: the same two-high picture before the snap can become any of the three.</p>
+</div>
+<div data-plates="covs" data-title="Playbook · Coverage variations" data-sub="Dashed ovals are zones; red marks the defender who makes the variation"></div>
+</section>
+
+<section class="chapter" id="ch-pressure" data-title="Pressure and protection">
+<div class="col">
+<span class="chapnum"><b>7</b> · Pressure and protection</span>
+<h2>Who rushes, who blocks, and who is left over</h2>
+<p>Every pass play is also a counting problem. The offense has five linemen and, if it chooses, a back and a tight end to block with; the defense chooses how many to rush and where they come from. Most of the time it rushes four and covers with seven. What makes a pressure dangerous is rarely how many come. It is whether the protection expected them.</p>
+<h3>Pressure families</h3>
+<p>A defense has four ways to reach the quarterback. It can win with four rushers one-on-one. It can make four rushers harder to block with a <span class="g" data-g="stunt">stunt</span>, or twist, in which two linemen exchange gaps after the snap and the blockers must pass them off. It can <span class="g" data-g="blitz">blitz</span>, rushing five or more and accepting thinner coverage behind. Or it can disguise <em>which</em> four or five come, with a <span class="g" data-g="sim">simulated pressure</span> or a <span class="g" data-g="fire-zone">fire zone</span>, a five-man pressure with three deep and three underneath in which a lineman drops into coverage. The extreme is <span class="g" data-g="cover-0">Cover 0</span>: six or more rushers, every receiver covered man-to-man, nobody deep.</p>
+</div>
+<div data-plates="pressure" data-title="Playbook · Pressure families" data-sub="Red: the rushers who create the problem"></div>
+<div class="col">
+<h3>How offenses protect</h3>
+<p>Protection answers the same counting problem from the other side. Before the snap the center identifies the <span class="g" data-g="mike-id">"Mike"</span>, the linebacker the protection counts from, and every blocker's assignment follows from that one call. Then the line works one of three schemes. In <span class="g" data-g="slide">slide</span> protection linemen block areas, which handles stunts well. In <span class="g" data-g="man-pro">man</span> protection each blocks a specific rusher, which holds up against power but can be crossed up by stunts. Most NFL teams use a <span class="g" data-g="half-slide">half-slide</span>, one side of each. Backs and tight ends add blockers: they stay in fully (<span class="g" data-g="max-pro">max protection</span>), <span class="g" data-g="chip">chip</span> an edge rusher before releasing, or check for a blitz and release when none comes, as the back does in the animation in the <a href="#ch-qb">quarterback chapter</a>.</p>
+<p>No protection blocks everyone. When the defense sends more rushers than the offense has blockers, one rusher is unblocked by design, and the answer is to throw before he arrives: a <span class="g" data-g="hot">hot route</span>, in which a receiver converts his route to a quick throw the moment he sees the blitz.</p>
+</div>
+<div data-plates="protect" data-title="Playbook · Protections" data-sub="T-bars are blocks; red marks the back's job or the hot throw"></div>
+<div class="col">
+<p>The Ravens' defensive answer in this contest is to disguise four rushers more often than to add a fifth, as Minter's chapter shows. On offense, protection also depends on the quarterback. One who can escape a collapsing pocket turns a lost one-on-one into a scramble instead of a sack, which is part of why Lamar Jackson holds the ball longer than almost anyone in the league.</p>
+</div>
+</section>
+
+<section class="chapter" id="ch-routes" data-title="Routes and concepts">
+<div class="col">
+<span class="chapnum"><b>7</b> · Routes and concepts</span>
+<h2>A pass play is a question asked of one defender</h2>
+<p>Individual routes have names, and many teams number them in a <span class="g" data-g="route-tree">route tree</span>. Numbering varies by team; the version below is common.</p>
+</div>
+<div id="f-tree"></div>
+<div class="col">
+<p>Routes are combined into <span class="g" data-g="concept">concepts</span>, and every good concept has the same goal: put one defender in a position where he cannot be right. Coaches call him the <span class="g" data-g="conflict">conflict defender</span>. There are four basic ways to do it.</p>
+<ol class="rule-list">
+  <li data-n="1"><b>Vertical stretch (high-low).</b> Two receivers on the same side at different depths. A zone defender between them can cover only one. <em>Smash</em> and <em>flood</em> work this way.</li>
+  <li data-n="2"><b>Horizontal stretch.</b> Receivers spread across the field at the same depth, so the zone defenders run out of width. Quick out-and-slant combinations, and the crossing routes of <em>mesh</em> against zone.</li>
+  <li data-n="3"><b>Clearing and filling.</b> One route pulls a defender away; the next route runs into the space he left. <em>Dagger</em> clears the seam to open the deep dig.</li>
+  <li data-n="4"><b>Traffic.</b> Against man coverage, receivers cross close together so defenders collide with each other or with the receivers. This is a <span class="g" data-g="rub">rub</span>; <em>mesh</em> is the classic.</li>
+</ol>
+<p>The same concept can be devastating against one coverage and useless against another, which is why quarterbacks study the safeties and why defenses disguise them.</p>
+<h3>Five concepts every viewer should know</h3>
+<p>Receivers are counted from the sideline inward on each side: the outside receiver is <b>#1</b>, the next one inside is <b>#2</b>, the next <b>#3</b>. Concepts are described with those numbers so they work from any formation.</p>
+</div>
+<div class="wide"><div class="concepts">
+  <div><h6>Smash</h6><p class="sub">A two-level stretch on the cornerback</p>
+    <dl><dt>Routes</dt><dd>#1 runs a <b>hitch</b>: five or six yards upfield, then stops and turns back to the quarterback. #2 runs a <b>corner</b>: 10 to 12 yards upfield, then a 45-degree break toward the sideline and the back of the end zone. Often run to both sides ("double smash").</dd>
+    <dt>The read</dt><dd>The cornerback. If he comes up on the hitch, throw the corner route over his head. If he sinks under the corner route, throw the hitch in front of him.</dd>
+    <dt>Beats</dt><dd>Cover 2, whose corner is the only underneath defender near the sideline while the deep safety starts from the hash.</dd>
+    <dt>Struggles against</dt><dd>Quarters, whose safety carries #2 when he goes vertical.</dd></dl></div>
+  <div><h6>Flood</h6><p class="sub">Three receivers, three depths, one side</p>
+    <dl><dt>Routes</dt><dd>#1 runs a <b>go</b> route to clear the deep defender. #2 runs a <b>sail</b> (a deep out) breaking to the sideline at 12 to 14 yards. The back or #3 runs to the <b>flat</b> at one to three yards.</dd>
+    <dt>The read</dt><dd>High to low on the flat defender. If he widens to the flat, throw the sail behind him; if he sinks under the sail, throw the flat.</dd>
+    <dt>Beats</dt><dd>Cover 3, which has only a deep-third corner and one curl-flat defender on that side: three receivers against two defenders.</dd>
+    <dt>Ravens note</dt><dd>A bootleg like the Week 1 opener is a moving flood: the quarterback rolls toward receivers spread at three depths.</dd></dl></div>
+  <div><h6>Mesh</h6><p class="sub">Two crossers, one traffic jam</p>
+    <dl><dt>Routes</dt><dd>The two inside receivers run <b>shallow crossers</b> in opposite directions at five or six yards, passing within an arm's length of each other. An outside receiver runs a corner; the back swings to the flat.</dd>
+    <dt>The read</dt><dd>Against man coverage, one crosser comes free as his defender is caught in the traffic (a <span class="g" data-g="rub">rub</span>). Against zone, the crossers stop in the open windows between linebackers and face the quarterback.</dd>
+    <dt>Beats</dt><dd>Man coverage, especially Cover 0 and Cover 1. Rarely a bad call against anything.</dd></dl></div>
+  <div><h6>Four verticals</h6><p class="sub">More deep threats than deep defenders</p>
+    <dl><dt>Routes</dt><dd>Both outside receivers run <b>go</b> routes, staying outside the numbers to pull the corners wide. Both slot receivers run <b>seams</b>, straight up the hash marks. The back is the checkdown.</dd>
+    <dt>The read</dt><dd>The deep safeties. Against one high safety, throw the seam he does not take. Against two, the seams split them at 18 to 20 yards.</dd>
+    <dt>Beats</dt><dd>Cover 3 and Cover 2: four vertical routes against three or two deep defenders.</dd>
+    <dt>Struggles against</dt><dd>Quarters, which has four deep defenders for four verticals.</dd></dl></div>
+  <div><h6>Dagger</h6><p class="sub">Clear the middle, then fill it</p>
+    <dl><dt>Routes</dt><dd>#2 (a slot or tight end) runs a <b>seam</b> to clear the middle of the field. #1 runs a deep <b>dig</b>, an in-breaking route at 15 to 18 yards, into the space the seam empties.</dd>
+    <dt>The read</dt><dd>Whoever covers #2. If he carries the seam, the dig opens behind the linebackers; if he stays shallow to take the dig, throw the seam.</dd>
+    <dt>Beats</dt><dd>Quarters, whose safety is taught to carry #2 vertically, and the middle of Cover 2 and Cover 3. A staple of play-action offenses.</dd></dl></div>
+</div></div>
+<div id="f-concepts"></div>
+<div class="col">
+<p>Each concept above is animated against the coverage it was built to beat. The <a href="#ch-lab">matchup lab</a> runs all five against every coverage.</p>
+<h3>The quick game</h3>
+<p>Those five are dropback concepts that take two to three seconds to develop. The <span class="g" data-g="quick-game">quick game</span> is built to be faster: short routes thrown in rhythm off a short drop, the ball out in about two seconds. It beats blitzes, keeps the offense on schedule on third-and-short and gives a pass rush no time to matter. The same principles apply at shallower depth. <span class="g" data-g="stick">Stick</span> and slant-flat are high-low or inside-outside reads on one defender; spacing is a horizontal stretch; <span class="g" data-g="drive">drive</span> and <span class="g" data-g="y-cross">Y-cross</span> are cousins of dagger, with one route holding a defender and the next running into the space behind him.</p>
+</div>
+<div data-plates="quick" data-title="Playbook · The quick game" data-sub="Circled numbers: the order of the reads" data-key></div>
+<div class="col">
+<h3>Play-action concepts</h3>
+<p>Play-action works the other way. It takes longer, protected by extra blockers and sold by a run fake that pulls the linebackers and safeties forward, and it throws into the space the fake empties. <span class="g" data-g="yankee">Yankee</span> is the classic shot: two deep routes from opposite sides against one deep safety. <span class="g" data-g="drift">Drift</span> is the safer cousin, a skinny post behind the linebackers. The keeper, or bootleg, moves the quarterback away from the fake toward a flood of receivers, the play the 2026 Ravens opened their season with.</p>
+</div>
+<div data-plates="pa" data-title="Playbook · Play-action" data-sub="Dotted line: the quarterback's fake and path"></div>
+</section>
+
+<section class="chapter" id="ch-qb" data-title="Quarterback reads and timing">
+<div class="col">
+<span class="chapnum"><b>9</b> · Quarterback reads and timing</span>
+<h2>Three seconds, three looks, then improvise</h2>
+<p>Everything in the last few chapters converges on one player and a short span of time. A pass play is a schedule. The quarterback's feet, the receivers' breaks and the pass rush all run on the same clock, and the quarterback's job is to decide where the ball goes before that clock runs out.</p>
+<h3>The feet set the clock</h3>
+<p>Drops are matched to route depth. A one-step drop, or a shotgun catch-and-throw, goes with hitches and slants at five yards. A three-step drop, or a shotgun catch and a hitch step, goes with routes breaking at 6 to 10 yards. A five-step drop goes with routes at 12 to 18 yards; a seven-step drop with deep shots, now rare outside play-action. The principle comes from Bill Walsh's timing offense: when the back foot lands at the top of the drop, the ball should leave for the first receiver if he is open. A quarterback still holding the ball after his hitch has moved past the plan.</p>
+<h3>Three kinds of reads</h3>
+<ul class="rule-list">
+  <li data-n="·"><b><span class="g" data-g="progression">Progression</span> reads.</b> Receivers are ranked 1, 2, 3, and the quarterback checks them in order, each for a fraction of a second, until one is open. A <span class="g" data-g="half-field">half-field</span> progression works one side of the field; a full-field progression sweeps both sides and takes longer.</li>
+  <li data-n="·"><b>Key-defender reads.</b> The quarterback watches one defender, the conflict defender of the concept, and throws opposite his choice: the cornerback on smash, the flat defender on flood, the nickel on an RPO. They are faster than progressions, because the decision comes from one player.</li>
+  <li data-n="·"><b>Coverage reads.</b> Before the snap the safeties narrow the options. One-high might send the quarterback to one half of the concept, two-high to the other.</li>
+</ul>
+<p>Good quarterbacks also move defenders with their eyes. A look at the seam pulls the middle safety a step toward it; a pump fake freezes a cornerback. The Week 1 choice-route touchdown in Part II used both.</p>
+<div class="qbclock"><div class="ql">
+  <div><b>0.0–0.3 s</b><span>Snap. From the shotgun the ball travels five yards; under center the quarterback turns away from the defense.</span></div>
+  <div><b>0.3–1.0 s</b><span>The drop. Eyes on the safeties: has the picture changed since the snap?</span></div>
+  <div><b>1.0–1.7 s</b><span>Read 1. Quick-game throws and key-defender reads are gone by now.</span></div>
+  <div><b>1.7–2.4 s</b><span>Read 2. The intermediate routes are breaking.</span></div>
+  <div><b>2.4–3.0 s</b><span>Checkdown. A back or tight end sitting short, in front of the linebackers.</span></div>
+  <div><b>3.0 s +</b><span>The pocket starts to collapse. Scramble, throw it away, or take the sack.</span></div>
+</div></div>
+<p>The league as a whole lives close to that schedule. Through seven weeks of 2026 the average <span class="g" data-g="time-to-throw">time to throw</span> was about 2.9 seconds, from Michael Penix Jr.'s 2.53, the quickest, to Caleb Williams's 3.22. Lamar Jackson ranked 32nd of 34 qualifying quarterbacks at 3.11 seconds; Tyler Huntley was 14th at 2.82. A long clock is not automatically a flaw. Two features of this offense push it up: play-action, which takes longer by design and which the Ravens use on 27% of dropbacks, and plays Jackson extends past the point where most quarterbacks give up. The cost is sacks and hits; the reward is the explosive play that only exists after three seconds.</p>
+<h3>The checkdown and the scramble</h3>
+<p>When every read is covered, the quarterback has two options left: the <span class="g" data-g="checkdown">checkdown</span> and his feet. The checkdown is the safety valve, a short throw to a back or tight end in front of the linebackers. Viewers underrate it; play-callers do not. A five-yard completion on first-and-10 keeps the offense on schedule, and an incompletion does not.</p>
+<p>Past about three seconds the play becomes improvisation, but structured improvisation. Offenses teach a <span class="g" data-g="scramble-drill">scramble drill</span>: when the quarterback leaves the pocket, receivers abandon their routes for rules. Short receivers work toward the sideline he is running to, deep receivers come back toward his side, crossers keep crossing, and nobody runs back at the quarterback, into his throwing lane. Defenders face a conflict of their own. Each one who comes up to stop a quarterback from running leaves a receiver behind him, and with a runner like Jackson they have to come up.</p>
+</div>
+<div id="f-prog"></div>
+<div class="col">
+<p>Both animations start from the same call. The difference is one linebacker's assignment and one edge rusher's win, and the quarterback had to recognize both inside three seconds. The matchup lab, next, runs the five concepts from <a href="#ch-routes">“Routes and concepts”</a> against six coverages so the reads can be practiced.</p>
+</div>
+</section>
+
+<section class="chapter" id="ch-lab" data-title="The matchup lab">
+<div class="col">
+<span class="chapnum"><b>8</b> · The matchup lab</span>
+<h2>Pick a coverage, pick a concept, run the play</h2>
+<p>Below, the Ravens offense runs the five concepts defined in <a href="#ch-routes">“Routes and concepts”</a> from the same two-by-two formation against six coverages. The defenders follow simplified versions of real coverage rules: zone defenders drop to landmarks and squeeze the nearest threat, man defenders trail their receivers, quarters safeties read the slot. Choose a combination; the verdict explains who the conflict defender is and where the ball should go. The grid underneath summarizes all thirty.</p>
+</div>
+<div id="lab"></div>
+<div class="col">
+<p>Read the grid by columns and a pattern appears. Cover 2 is vulnerable to high-low concepts on the sideline; Cover 3 to anything that floods one side or attacks the seams; man coverage to crossing routes; quarters to short routes and to the dig behind a safety who has been pulled away. No coverage is safe against everything, which is the point. The defense's best weapon is to make the quarterback guess wrong about which one it is playing.</p>
+</div>
+</section>
+
+<!-- ===================== PART II ===================== -->
+<div class="col part-open" data-part="Part II · Ravens Offense">
+  <span class="kicker">Part II</span>
+  <h2>The 2026 Ravens Offense</h2>
+  <p class="dek">A 29-year-old play-caller, a two-time MVP under center, and a 32-year-old running back who already knows this system's favorite run.</p>
+</div>
+
+<section class="chapter" id="ch-doyle" data-title="Doyle's system">
+<div class="col">
+<span class="chapnum"><b>9</b> · Doyle's system</span>
+<h2>Under center, in motion, and blocking downfield</h2>
+<p>After an 8–9 season and a missed postseason, the Ravens dismissed John Harbaugh, hired the Chargers' defensive coordinator Jesse Minter as head coach, and gave the offense to Declan Doyle. Doyle, 29, the same age as Lamar Jackson, had spent 2025 as Chicago's offensive coordinator under Ben Johnson, who called the plays, after earlier stops under Sean Payton in New Orleans and Denver. Baltimore is his first job as a play-caller. Todd Monken, the coordinator he replaced, is now Cleveland's head coach.</p>
+<p>Doyle's lineage is the under-center, play-action tradition that runs through Payton and the modern Los Angeles and San Francisco offenses. Its premises fit on an index card:</p>
+<ol class="rule-list">
+  <li data-n="1"><b>Make every play start the same way.</b> The run and the play-action pass share the same first second, so defenders who read the run correctly are wrong on the pass.</li>
+  <li data-n="2"><b>Use motion to create advantages and to make the defense declare its coverage.</b></li>
+  <li data-n="3"><b>Win on the perimeter.</b> Explosive plays come from receivers and tight ends who block in space. Doyle stressed perimeter blocking all offseason.</li>
+  <li data-n="4"><b>Give the quarterback ownership.</b> Doyle has said he wants Jackson to shape the offense as it best fits him during the season.</li>
+</ol>
+</div>
+<div class="wide"><div class="stats">
+  <div class="stat"><div class="n">506</div><div class="l">Yards in Week 1 at Indianapolis, 7.9 per play</div></div>
+  <div class="stat"><div class="n">~⅔</div><div class="l">Share of Week 1 snaps with Lamar under center (CBS Sports' Jacob Gibbs)</div></div>
+  <div class="stat"><div class="n">7/8</div><div class="l">Lamar on play-action passes in Week 1, for 128 yards (Next Gen Stats)</div></div>
+  <div class="stat"><div class="n">130</div><div class="l">Henry yards on 19 under-center rushes in Week 1</div></div>
+  <div class="stat"><div class="n">119.6</div><div class="l">Lamar's passer rating through his four starts</div></div>
+</div></div>
+
+<div class="col">
+<h3>Perimeter blocking</h3>
+<p><span class="g" data-g="perimeter">Perimeter blocking</span> is the blocking that happens outside the tackles and downfield, in open space, mostly by wide receivers and tight ends. Linemen decide whether a play gains its first four yards; perimeter blockers decide whether a four-yard gain becomes a 30-yard one, because the last defenders between a ball carrier and the end zone are cornerbacks and safeties that only receivers can reach. Its main forms:</p>
+<ul class="rule-list">
+  <li data-n="·"><b><span class="g" data-g="stalk">Stalk</span> block.</b> A receiver runs at the cornerback as if on a route, then breaks down, squares up and mirrors him, staying between the defender and the ball carrier. Bateman's block on the Henry touchdown below.</li>
+  <li data-n="·"><b><span class="g" data-g="crack">Crack</span> block.</b> A receiver comes back inside to block a linebacker or safety who is pursuing toward the sideline, from the side he cannot see.</li>
+  <li data-n="·"><b>Arc and kick-out blocks.</b> A tight end or back loops outside to take the force defender (an <span class="g" data-g="arc">arc</span>) or drives the end man outward to open a hole inside (a kick-out).</li>
+  <li data-n="·"><b>Convoy.</b> On screens, linemen and receivers who release in front of the ball carrier to block the first defenders in space.</li>
+</ul>
+<p>It is the least glamorous job on the field and one of the most visible on film: on almost every long run, someone 20 yards from the ball made it possible.</p>
+<h3>The run game: zone and gap</h3>
+<p>Every run scheme belongs to one of two families. In <span class="g" data-g="zone-run">zone</span> schemes, the whole line steps in the same direction and each lineman blocks whoever enters his area; the back reads the blocks and picks his hole. <span class="g" data-g="inside-zone">Inside zone</span> aims at the guard and tackle; <span class="g" data-g="outside-zone">outside zone</span> aims outside the tight end and stretches the defense sideways until a crease opens. In <span class="g" data-g="gap-scheme">gap</span> schemes such as <span class="g" data-g="power">power</span> and <span class="g" data-g="counter">counter</span>, linemen block down at angles and one or two of them <span class="g" data-g="pull">pull</span>, running behind the line to lead through a specific hole.</p>
+<p>Derrick Henry became a star in Tennessee's outside-zone offense, and Doyle's arrival returned him to it. In Week 1 the Ravens ran 13 outside-zone and stretch plays for 89 yards and three touchdowns.</p>
+<p>The run is the identity, not just a tool. Through seven games the Ravens threw 3.1 percentage points less often than down, distance and score predicted, a <span class="g" data-g="proe">pass rate over expected</span> that ranked 24th. Leaning on the run usually costs efficiency, yet the offense's <span class="g" data-g="success-rate">success rate</span> was 46.9%, ninth in the league (average about 43.5%), and 6.1% of its plays gained 20 yards or more, 11th.</p>
+</div>
+<div id="f-oz"></div>
+<div class="col">
+<h3>Beyond zone and power</h3>
+<p>Three more runs appear in nearly every playbook, and each punishes a different defensive habit. <span class="g" data-g="duo">Duo</span> is power without a puller: two double-teams and a back running straight downhill at defenders who want to play fast. <span class="g" data-g="trap">Trap</span> leaves an aggressive defensive tackle unblocked so he runs himself out of the play. <span class="g" data-g="toss">Toss</span> and sweep race the ball to the edge before a pinching defense can get there, and pair naturally with the boot: same start, opposite finish.</p>
+</div>
+<div data-plates="runs" data-title="Playbook · More runs" data-sub="Thick line: the ball carrier · red: the defender the play is built around"></div>
+
+<div class="col">
+<h3>The quarterback as the extra blocker</h3>
+<p>The <span class="g" data-g="read-option">read option</span> fixes box arithmetic by leaving one defender unblocked on purpose and letting the quarterback decide, after the snap, whether to hand off or keep. If the unblocked defender chases the back, the quarterback keeps; if he stays home, the back gets the ball against a box that is one defender lighter. Doyle combined it with an unbalanced line and an <span class="g" data-g="arc">arc</span> block to score on the opening drive of the season.</p>
+</div>
+<div id="f-arc"></div>
+
+<div class="col">
+<p>The <span class="g" data-g="rpo">run-pass option</span> applies the same logic to a defender in coverage. The line blocks a run, and the quarterback reads a second-level defender who is responsible both for a run gap and for a receiver. Whatever that defender does, the quarterback does the opposite. It is a seasoning, not a staple, in Doyle's offense: RPOs made up 3.1% of plays in the first seven games, 18th in the league, against an average of 3.8% and a high near 10% in Carolina.</p>
+</div>
+<div id="f-rpo"></div>
+<div class="col">
+<h3>Designed quarterback runs</h3>
+<p>The read option makes the quarterback a <em>possible</em> runner. A <span class="g" data-g="qb-run">designed quarterback run</span> makes him the ball carrier from the start, and the running back becomes a blocker. The arithmetic is direct: a back who blocks instead of carrying adds a blocker, and a quarterback who carries instead of handing off erases the defense's free tackler. Few offenses can afford the hits on their quarterback. The Ravens have built around these plays since Jackson's 2019 MVP season, when he ran for 1,206 yards, the single-season record for a quarterback. QB power and counter are gap runs with the quarterback carrying; the QB draw punishes rushers who fly upfield; the <span class="g" data-g="inverted-veer">inverted veer</span> turns the read option inside out.</p>
+</div>
+<div data-plates="qbruns" data-title="Playbook · The quarterback as the runner" data-sub="Red: the quarterback's path"></div>
+
+<div class="col">
+<h3>Play-action and the boot</h3>
+<p>Play-action is only as good as the run it imitates, and under center it is better, because the defense cannot see the ball. The Ravens used play-action on 27% of dropbacks in the first seven games, seventh in the league; across the league about one dropback in five is play-action, and the most committed offenses, led by Chicago, are above 30%. The opening snap of the season (diagrammed at the top of this page) added a wrinkle opponents had never seen: a <span class="g" data-g="boot">bootleg</span> to Jackson's left, his non-throwing side. In his first eight seasons he had three designed under-center play-action rollouts to the left, never more than one in a year, according to Sports Info Solutions.</p>
+<p>The boot matters beyond its own yards. Defensive ends who get burned by boots start staying home on the backside, and a defensive end who stays home cannot chase the run from behind. Analysts noticed Colts ends hanging back in the second half, which opened cutback lanes for Henry. Each play in a well-built offense makes another play work.</p>
+
+<h3>Answers to pressure: the choice route</h3>
+<p>Blitzes are the defense's way of beating box arithmetic from the other direction. The offense's answer is to put receivers where they are hard to jam and give them routes with options. Doyle aligned Flowers in the backfield next to Jackson and gave him a <span class="g" data-g="choice">choice route</span>.</p>
+</div>
+<div id="f-choice"></div>
+
+<div class="col">
+<h3>Screens: letting the rush through</h3>
+<p>A <span class="g" data-g="screen">screen</span> turns a defense's aggression against it. The linemen invite the rushers upfield, then release to block in space for a receiver or back behind them. Screens matter most when the passing game is limited, which is the situation the Ravens faced while Lamar Jackson was injured. They are still a small part of the menu: 6.8% of dropbacks in the first seven games, 24th in the league against an average near 8.6%.</p>
+</div>
+<div id="f-screen"></div>
+
+<div class="col">
+<h3>Without Lamar</h3>
+<p>Jackson injured his ankle on the last offensive play of the first half against Tennessee in Week 4 and missed the next three games. Tyler Huntley went 1–2 as the starter: an overtime win in Atlanta and losses at Cleveland and against Cincinnati, with 23 points and no second-half points across the final two. The schemes did not change; what changed was the reason they work. Box arithmetic needs a quarterback the defense fears as a runner, and play-action needs a quarterback who punishes defenders for stepping up.</p>
+</div>
+</section>
+
+<!-- ===================== PART III ===================== -->
+<div class="col part-open" data-part="Part III · Ravens Defense">
+  <span class="kicker">Part III</span>
+  <h2>The 2026 Ravens Defense</h2>
+  <p class="dek">Minter's rule: make it simple for your own players and complicated for the quarterback.</p>
+</div>
+
+<section class="chapter" id="ch-minter" data-title="Minter's defense">
+<div class="col">
+<span class="chapnum"><b>10</b> · Minter's defense</span>
+<h2>Three safeties, two shells and the half-second before the snap</h2>
+<p>Minter calls the Ravens' defense himself; Anthony Weaver, a former Ravens defensive lineman and Miami's defensive coordinator in 2024–25, is the coordinator who runs the room. Minter's background runs through Vic Fangio's two-high tradition, Jim Harbaugh's 2022–23 Michigan defenses and the 2024–25 Chargers. He describes four pillars: block destruction, shocking effort, ball disruption and "obnoxious communication."</p>
+<p>The scheme rests on three choices.</p>
+<ol class="rule-list">
+  <li data-n="1"><b>Play with three safeties.</b> Minter's base look against most offenses is the big nickel: Kyle Hamilton, Malaki Starks and Jaylinn Hawkins on the field together. Safeties can cover like defensive backs and fit the run like linebackers, so the defense does not have to substitute to match the offense.</li>
+  <li data-n="2"><b>Keep two deep, then rotate.</b> Show the quarterback a two-high shell before the snap, then turn it into whatever the call requires. Hamilton aligns at all three levels of the defense within the same game.</li>
+  <li data-n="3"><b>Create pressure with deception, not numbers.</b> In Week 1 the Ravens rushed exactly four on 26 of Daniel Jones's 33 dropbacks, yet pressured him on 55% of them, using 12 stunts and 12 blitzes by off-ball players. When they did send five or more (seven times) Indianapolis averaged negative yardage. Over seven games the blitz rate was 31%, 14th in the league and almost exactly average; Minnesota, at the other extreme, blitzed on 71% of dropbacks.</li>
+</ol>
+</div>
+<div id="f-disguise"></div>
+<div class="col">
+<h3>Simulated pressure</h3>
+<p>A <span class="g" data-g="sim">simulated pressure</span> sends four rushers, the normal number, but not the expected four: a linebacker or safety rushes while a lineman drops into coverage. Protection schemes assign blockers by position, so a rusher who appears from an unexpected spot can come free without the defense taking any extra risk in coverage. Minter's 2025 Chargers ran simulated pressures on 9.5% of dropbacks (10th in the league) and line stunts on 19.8% (9th). The play below, from the first quarter of the opener, shows the idea with a single dropping lineman.</p>
+</div>
+<div id="f-pressure"></div>
+<div class="col">
+<h3>The run-defense trade</h3>
+<p>Smaller personnel has a price. In Week 1 the big nickel faced 17 runs and allowed 92 yards, 5.4 per carry. Over seven games the defense allowed a success rate of 43.5%, right at the league average, and gains of 20 yards or more on 5.9% of plays, slightly worse than average. Filmstudy Baltimore's assessment was that the defense was built to concede some rushing yards in exchange for better pass defense. Three-safety defenses survive against the run only if every gap is filled, and the safeties are asked to fill them from depth.</p>
+</div>
+<div id="f-fit"></div>
+</section>
+
+<section class="chapter" id="ch-attack" data-title="How offenses attack the Ravens">
+<div class="col">
+<span class="chapnum"><b>11</b> · How offenses attack the Ravens</span>
+<h2>The fourth-quarter problem</h2>
+<p>Early in the 2026 season a pattern emerged: the Ravens defended well early in games and faded late. They lost 11-point second-half leads in Weeks 2 and 3, a double-digit lead at Cleveland in Week 6, and a 13–0 halftime lead against Cincinnati in Week 7. Over the first six games their fourth-quarter pressure rate was 30.1% (26th in the league) and their fourth-quarter sack rate 3.9%.</p>
+<p>Opponents have found three repeatable answers to Minter's structure.</p>
+<ol class="rule-list">
+  <li data-n="1"><b>Get the ball out fast.</b> Disguise and late rotation need time to matter. A quarterback who throws in under 2.5 seconds, before the rotation finishes and before a four-man rush can arrive, takes both weapons away. Cincinnati opened the second half this way.</li>
+  <li data-n="2"><b>Attack the middle against light rushes.</b> When the Ravens protect a lead by rushing three or four and dropping extra defenders, a patient quarterback finds the windows between zone layers.</li>
+  <li data-n="3"><b>Target depth players.</b> Three-safety structures put a premium on the third and fourth safety. In Week 7 Joe Burrow attacked Keondre Jackson, who was playing an expanded role.</li>
+</ol>
+</div>
+<div id="f-rush3"></div>
+<div class="col">
+<p>The counter-adjustments are also familiar: rush with more deception late rather than fewer men, play more man coverage on the quick throws to challenge the release, and use the Week 1 formula of dime personnel with a four-man "rush dime" front of Hendrickson, Robinson, Green and Calais Campbell on obvious passing downs. Trey Hendrickson's health is part of the equation. He generated eight pressures in Week 1, when the Ravens pressured on 58.6% of dropbacks with him on the field and 20% without him, then missed two games with a finger injury.</p>
+</div>
+</section>
+
+<!-- ===================== PART IV ===================== -->
+<div class="col part-open" data-part="Part IV · Reading the Game">
+  <span class="kicker">Part IV</span>
+  <h2>Reading the Game</h2>
+  <p class="dek">The routine a coach runs on every snap, from the huddle breaking to the first second after the ball moves.</p>
+</div>
+
+<section class="chapter" id="ch-presnap" data-title="Pre-snap: the checklist">
+<div class="col">
+<span class="chapnum"><b>12</b> · Before the snap</span>
+<h2>Eight questions in twenty seconds</h2>
+<p>From the moment the previous play ends, the offense has 40 seconds to snap the ball. Most of that time the information is hidden in the huddle. The useful window is the last 15 to 20 seconds, when both teams are aligned. Coaches run the same questions in the same order, from the broadest to the most specific. With practice it takes about as long as reading this paragraph.</p>
+<ol class="rule-list">
+  <li data-n="1"><b>Situation.</b> Down, distance, field position, score, clock. Third-and-8 narrows what both sides will do more than any formation. Inside the 20 the field compresses, deep zones disappear and man coverage rises.</li>
+  <li data-n="2"><b>Personnel.</b> Count backs and tight ends, then count defensive backs. A mismatch here (two tight ends against a dime defense, four receivers against base) is the first edge.</li>
+  <li data-n="3"><b>Formation and strength.</b> Where are the tight ends? Which side has more receivers? Is the line unbalanced? Is the quarterback under center, in the gun, in the pistol? Is the ball on a hash?</li>
+  <li data-n="4"><b>Motion.</b> Does a defender travel with the motion man (man coverage) or do defenders bump over (zone)? Does the safety rotate with it? Does the motion man stop in the backfield, a hint of a run or protection change?</li>
+  <li data-n="5"><b>The safeties.</b> One high or two high? How deep? Shallow two-high safeties near the box suggest quarters; deep and wide suggest Cover 2. A safety creeping down late is a disguise or a blitz.</li>
+  <li data-n="6"><b>The corners.</b> Pressed or off? Inside or outside <span class="g" data-g="leverage">leverage</span>? Eyes on the receiver (man) or on the quarterback (zone)? A corner at seven yards with his hips turned slightly outside is getting ready to bail.</li>
+  <li data-n="7"><b>The box.</b> Count defenders against blockers. Note linebacker depth: linebackers at four yards are thinking run; at six or seven, pass. Linebackers standing in the A-gaps (<span class="g" data-g="mugged">mugged</span>) signal pressure, real or simulated.</li>
+  <li data-n="8"><b>The offense's small tells.</b> A running back offset to one side often runs the other way or blocks on that side. Wide receivers with tight splits (close to the formation) usually run inside-breaking routes or crack-block; wide splits leave room to break inside. A lineman with more weight on his hand is about to fire forward. The quarterback looking at the play clock and the sideline means a check is coming.</li>
+</ol>
+</div>
+<div class="col">
+<h3>What the numbers tell you to expect</h3>
+<p>Tendencies are the baseline for every pre-snap read. Coaches call them "the book": before the first snap they know what a team does most, so the checklist above becomes a search for deviations. Here is the book on the 2026 Ravens over the first seven games.</p>
+</div>
+<div class="wide"><div class="compare scout">
+  <div><h6>When the Ravens have the ball</h6><ul>
+    <li><b>Heavy, but with tight ends.</b> Two or more tight ends on 47% of plays; three tight ends on 14%. Fullback sets almost never.</li>
+    <li><b>Under center 45%</b> of the time (9th), with Lamar Jackson starting under center far more than in previous seasons.</li>
+    <li><b>Motion on half the snaps.</b> Expect the defense to be asked to declare man or zone.</li>
+    <li><b>Run first.</b> Pass rate 3.1 points below expectation; play-action on 27% of dropbacks.</li>
+    <li><b>Defenses load the box against Henry:</b> eight or more defenders on 29% of his carries.</li>
+  </ul></div>
+  <div><h6>When the Ravens are on defense</h6><ul>
+    <li><b>Two-high after the snap 61%</b> of the time (3rd), so the deep middle is usually open.</li>
+    <li><b>Zone about four snaps in five;</b> man on roughly one in six.</li>
+    <li><b>Five or more defensive backs on 81%</b> of snaps, usually with three safeties.</li>
+    <li><b>Light boxes:</b> six or fewer defenders near the line on 55% of snaps. Offenses are invited to run.</li>
+    <li><b>Blitz on about one dropback in three,</b> league average; the pressure comes from disguise more than from numbers.</li>
+  </ul></div>
+</div></div>
+<div class="col"><p class="note">Sources: Sharp Football Analysis (personnel, under-center rate, coverage, box and sub-package rates) and FTN Data via nflverse as published by muffed.ai (motion, play-action, pass rate over expected, blitz, Henry's box counts). Different charting services define motion and play-action differently; each figure here comes from a single source.</p></div>
+<div id="q2"></div>
+<div id="q3"></div>
+<div id="q4"></div>
+<div id="q5"></div>
+</section>
+
+<section class="chapter" id="ch-snap" data-title="At the snap: the first second">
+<div class="col">
+<span class="chapnum"><b>13</b> · At the snap</span>
+<h2>The first second tells you almost everything</h2>
+<p>The camera follows the ball, so most viewers watch the quarterback. Coaches watch the players who must reveal their assignment first. Linemen cannot fake for long: a run blocker must move forward and a pass blocker must move back within a fraction of a second. Safeties must start rotating at the snap to reach their landmarks in time. That makes the first second the most honest part of the play.</p>
+<div class="look">
+  <div class="look-bar">
+    <div><b>0.0–0.5 s</b>Offensive line: forward or backward? Anyone pulling or releasing? Safeties: rotating or holding?</div>
+    <div><b>0.5–1.5 s</b>Linebackers: triggering downhill (they read run) or dropping? Running back's path. Corners: bail, squat or turn and run?</div>
+    <div><b>1.5–3.0 s</b>Routes against coverage: who is the conflict defender, which window is open. The quarterback's eyes and feet.</div>
+    <div><b>3.0 s +</b>The pocket breaks down. Scramble drill: receivers convert to deep-to-shallow, defenders plaster their man.</div>
+  </div>
+</div>
+<h3>Reading the offensive line</h3>
+<p>Every lineman is a signboard. Coaches compress the read into a few words.</p>
+<ul class="rule-list">
+  <li data-n="↑"><b>Low hats, moving forward: run.</b> Pads down, first step toward the defense or along the line.</li>
+  <li data-n="↓"><b>High hats, moving backward: pass.</b> Linemen stand up and kick-slide back to form a pocket.</li>
+  <li data-n="→"><b>Everyone stepping the same direction: zone.</b> The whole line moves as one unit.</li>
+  <li data-n="↻"><b>A lineman runs behind the others: gap scheme.</b> Follow the puller to the point of attack.</li>
+  <li data-n="≈"><b>Low hats that stop at the line: play-action.</b> On a pass, linemen may not be more than one yard downfield when the ball is thrown beyond the line, so they "sell" the run without climbing.</li>
+  <li data-n="⇢"><b>Pass set, then rushers let free and linemen releasing: screen.</b></li>
+</ul>
+<p>Five versions of the same pre-snap picture show the difference.</p>
+</div>
+<div id="f-lines"></div>
+<div class="col">
+<h3>Reading the secondary</h3>
+<p>The defense's first-second tells mirror the offense's. Safeties must move to their landmarks: one sprinting to the middle means one-high, both widening means two-high. Cornerbacks reveal their job with their hips and eyes. A corner who opens his hips and runs, eyes on the quarterback, is <span class="g" data-g="bail">bailing</span> to a deep third. A corner who shuffles and stays near the flat is playing Cover 2. A corner pedaling slowly with eyes on the outside receiver is playing quarters. A corner who turns and runs with the receiver, eyes on the receiver's hips, is in man. The <a href="#ch-coverage">coverage gallery</a> shows all six; use its timeline to stop at 0.5 seconds and compare.</p>
+<p>Linebackers tell you what <em>they</em> read. Linebackers who step forward hard are reading run keys; on play-action that step is what the offense wanted. A linebacker who turns and runs with the running back out of the backfield is in man coverage. One who drops straight back with his eyes on the quarterback is in zone.</p>
+</div>
+<div id="q6"></div>
+<div id="q7"></div>
+</section>
+
+<section class="chapter" id="ch-situations" data-title="Situational football">
+<div class="col">
+<span class="chapnum"><b>14</b> · Situations</span>
+<h2>Down, distance and the decisions that decide games</h2>
+<p>Most games are decided by a handful of situations: third downs, the red zone, the final two minutes of each half, and fourth-down decisions. Each changes what both teams can do.</p>
+</div>
+<div class="wide tbl-wrap"><table>
+  <thead><tr><th>Situation</th><th>What changes</th><th>What to watch</th></tr></thead>
+  <tbody>
+    <tr><td>1st-and-10</td><td>Widest playbook. Run and play-action are equally plausible.</td><td>Personnel and box count. Under-center play-action is at its most dangerous here.</td></tr>
+    <tr><td>2nd-and-long</td><td>Offense needs a chunk; defense can sit back.</td><td>Screens and draws against defenders dropping deep.</td></tr>
+    <tr><td>3rd-and-short (1–3)</td><td>Both sides load the box. The quarterback sneak and quick man-beaters.</td><td>Mugged A-gaps, heavy personnel, the quarterback's legs.</td></tr>
+    <tr><td>3rd-and-medium (4–6)</td><td>The money down. Quick concepts against man and zone pressure.</td><td>Rubs and option routes; creepers and simulated pressures.</td></tr>
+    <tr><td>3rd-and-long (7+)</td><td>Defense can play dime and rush four, or play soft and tackle short.</td><td>Where the defense sets its depth relative to the line to gain.</td></tr>
+    <tr><td>Red zone</td><td>The field shrinks to 20 yards of depth; deep zones vanish; man coverage rises.</td><td>Rubs, fades, quarterback runs. Every defender is closer to every receiver.</td></tr>
+    <tr><td>Two-minute</td><td>Clock management; defenses play soft to protect the sideline and deep middle.</td><td>Throws to the sideline, timeouts, spikes, the hurry-up.</td></tr>
+  </tbody>
+</table></div>
+<div class="col">
+<h3>Red zone and two-minute</h3>
+<p>Inside the 20 the field runs out of depth. The back line of the end zone acts as an extra defender, deep zones shrink to almost nothing, and defenses play more man coverage because every receiver is close. Offenses answer with throws that beat man coverage in a small space: the <span class="g" data-g="fade">fade and back-shoulder</span> throw to a big receiver one-on-one, rubs from <span class="g" data-g="stack">stacked</span> or bunched receivers, and quarterback runs that add a blocker. At the other end of the field, the two-minute drill is a race against the clock. The defense plays soft, often in a <span class="g" data-g="prevent">prevent</span> shell, conceding short completions in the middle of the field, where the clock keeps running, and protecting the sideline and the deep middle.</p>
+<p>The Ravens' Week 3 win in Dallas shows how little time a drive needs. After the Cowboys tied the game at 31 with seven seconds left, Jackson completed a 27-yard pass to Zay Flowers, then called timeout himself with one second on the clock. Tyler Loop kicked a 56-yard field goal on the final play. "Everyone was on the same timing," Jackson said afterward.</p>
+</div>
+<div data-plates="redzone" data-title="Playbook · Red zone and two-minute" data-sub="Shaded: the end zone"></div>
+<div class="col">
+<h3>Fourth down</h3>
+<p>Analytics changed fourth-down strategy more than any other part of the game. Win-probability models compare the expected outcome of going for it, kicking and punting; conservative decisions (punting on fourth-and-1, kicking short field goals when ahead) cost teams wins across a season. Minter's first big call came in the second quarter of Week 1: fourth-and-goal from the 3, he kept the offense on the field. Filmstudy Baltimore's model rated it essentially break-even, with a slight win-probability gain of 0.4 percentage points. In Week 7, trailing 14–13 in the fourth quarter, he passed on a short go-ahead field goal; Huntley's fourth-down throw fell incomplete and Cincinnati turned the stop into a touchdown. Two aggressive decisions, two different outcomes; judging them requires separating the quality of the decision from the result.</p>
+<p>Two statistics help with that separation. <span class="g" data-g="epa">Expected points added</span> measures how much a play changed the scoring expectation of the drive. <span class="g" data-g="success-rate">Success rate</span> counts the share of plays that keep an offense on schedule. Both are on the broadcast more every year.</p>
+</div>
+</section>
+
+<section class="chapter" id="ch-special" data-title="Special teams">
+<div class="col">
+<span class="chapnum"><b>17</b> · Special teams</span>
+<h2>The third phase, and the yards nobody counts</h2>
+<p>Kickoffs, punts, field goals and extra points add up to roughly two dozen plays a game. They rarely make highlights, but they set the starting point of every drive, and starting point is most of what decides whether a drive scores. Coaches call special teams the third phase of the game, after offense and defense.</p>
+<h3>The kickoff</h3>
+<p>The kickoff was redesigned in 2024 to cut down high-speed collisions while bringing back returns. The kicker lines up alone at his own 35. His ten teammates line up at the receiving team's 40, facing at least nine opponents set between the receiving 30 and 35, and only the kicker and up to two returners may move until the ball touches the ground or a player. A kick must land in the <span class="g" data-g="landing-zone">landing zone</span>, between the goal line and the 20, and be played; one that lands there and rolls into the end zone is a <span class="g" data-g="touchback">touchback</span> at the 20. A kick that reaches the end zone in the air is a touchback at the 35, and one that falls short of the landing zone gives the receiving team the ball at its 40. The result is a return that looks more like a run play than a collision: blockers engaged almost at once and a returner picking a crease.</p>
+<h3>Punts and field goals</h3>
+<p>The punt is the hardest play in football to protect. The snapper throws the ball 14 to 15 yards back to the punter; a <span class="g" data-g="personal-protector">personal protector</span> sets the protection; the <span class="g" data-g="gunner">gunners</span> split wide and race for the returner while one or two "jammers" fight to slow each of them. Distance is only part of a good punt. <span class="g" data-g="hang-time">Hang time</span> gives the coverage time to arrive, and directional punts pin a returner against the sideline. Baltimore's punter in 2026 is a rookie, Ryan Eckley, who won the job in the preseason. The special teams coordinator, in his first year in the role, is Anthony Levine Sr., for years one of the Ravens' own core special-teams players.</p>
+<p>A field goal takes about 1.3 seconds from snap to kick, which is the window a block must fit into. Range shapes strategy: a kicker who makes 55-yard kicks turns the opponent's 37 into scoring territory. Tyler Loop's 56-yarder to beat Dallas came from just outside that line.</p>
+</div>
+<div data-plates="st" data-cols="3" data-title="Playbook · Special teams" data-sub="The three units at alignment"></div>
+<div class="col">
+<h3>Field position</h3>
+<p>Coaches think of the field in zones. Backed up inside its own 20, an offense plays conservatively. Between the 20s it runs its normal game. Past the opponent's 40 or so it enters four-down territory, where analytics models usually favor going for it on fourth-and-short, and inside the 20 it is in the red zone. Every punt, return and touchback moves the next drive's start between those zones. That is why a punter who lands the ball inside the 10 has often done more for his team than one who kicks it ten yards farther into the end zone.</p>
+</div>
+</section>
+
+<section class="chapter" id="glossary" data-title="Glossary">
+<div class="col"><span class="chapnum"><b>A–Z</b> · Glossary</span><h2>Every term on this page</h2></div>
+<div class="wide"><dl class="gloss" id="glossary-list"></dl></div>
+</section>
+
+<section class="chapter" id="sources" data-title="Sources and method">
+<div class="col">
+<span class="chapnum">Sources and method</span>
+<h2>Where the facts come from</h2>
+<p class="note" style="border:0;padding:0">Statistics and play descriptions are attributed in the text or under each diagram. Reconstructed plays follow the descriptions in these sources; anything the sources do not establish is drawn as illustration and labeled so. The coverage lab is a rules-based simulation, not tracking data.</p>
+<ol class="sources">
+  <li>Ryan Mink, "What We Learned About Declan Doyle's New Offense," <a href="https://www.baltimoreravens.com/news/ravens-declan-doyle-new-offense-colts-film-breakdown-week-1-2026">BaltimoreRavens.com</a>, Sept. 15, 2026 (boot left, unbalanced read, Flowers choice route, downfield blocking).</li>
+  <li>Ken McKusick, "Defensive Notes vs Colts Week 1," <a href="https://www.filmstudybaltimore.com/defensive-notes-week-1-2026/">Filmstudy Baltimore</a>, Sept. 14, 2026 (package counts, rush numbers, Q1 12:40 pressure, fourth-down analysis).</li>
+  <li>"In play-calling debut, Declan Doyle takes Lamar Jackson and Ravens' offense to new places," <a href="https://www.thebanner.com/sports/ravens-nfl/ravens-colts-declan-doyle-lamar-jackson-HM3E3VNGZBANHJBSQKTQRA7AQY/">The Banner</a> (outside-zone totals, SIS rollout data).</li>
+  <li>"What will Jesse Minter's Ravens look like?" <a href="https://www.thebanner.com/sports/ravens-nfl/ravens-jesse-minter-film-study-chargers-defense-VL2JNDNP35ALJMCMRAVYDTQZNQ/">The Banner</a> (Chargers simulated-pressure and stunt rates).</li>
+  <li>"Grades &amp; Snap Counts: Ravens' Stars Shined in Opener," <a href="https://www.baltimoreravens.com/news/ravens-grades-snap-counts-week-1-colts-zay-flowers-lamar-jackson-roquan-smith">BaltimoreRavens.com</a> (play-action numbers, Hendrickson pressure splits).</li>
+  <li>"The Stats That Defined the Ravens' First Four Games," <a href="https://www.baltimoreravens.com/news/ravens-stats-first-four-games-2026-season">BaltimoreRavens.com</a> (passer rating, penalties).</li>
+  <li>"Ravens' offense is creating explosive plays in more ways than one," <a href="https://ebonybird.com/baltimore-ravens-offense-is-creating-explosive-plays-in-more-ways-than-one">EbonyBird</a> (under-center rate, Lamar's under-center EPA since 2024).</li>
+  <li>"Why NFL offences are going under center more often in 2026," <a href="https://www.tsn.ca/nfl/article/why-nfl-offences-are-going-under-center-more-often-in-2026-n1-49956804/">TSN</a> (22-personnel usage).</li>
+  <li>Gordon McGuinness, "Three Things to Expect from the Ravens Offense," <a href="https://gordonmcguinness.substack.com/p/three-things-to-expect-from-the-ravens">Ravens in 5</a> (Bears 12-personnel rate, play-action rates).</li>
+  <li>"Film Review: What Jesse Minter's Defense Could Look Like in Baltimore," <a href="https://www.baltimoreravens.com/news/jesse-minter-defensive-scheme-film-ravens-head-coach-hire">BaltimoreRavens.com</a> (four pillars, disguise philosophy); "Those Who Know Jesse Minter Know He's Ready," <a href="https://www.baltimoreravens.com/news/jesse-minter-cover-story-2026-season-opener-eric-weddle-kyle-hamilton-defense-calling-card-baltimore-ravens">BaltimoreRavens.com</a> (three-safety base).</li>
+  <li>"Ravens' Jesse Minter has been masterful with his pre-snap disguise," <a href="https://sports.yahoo.com/articles/ravens-jesse-minter-masterful-pre-171619755.html">Ravens Wire</a>.</li>
+  <li>"The 3 Biggest Problems With Ravens 4th Quarter Defense," <a href="https://www.si.com/nfl/ravens/onsi/the-3-biggest-problems-with-ravens-4th-quarter-defense-after-yet-another-collapse-01m58f6mjs8n">Ravens On SI</a> (fourth-quarter pressure and sack rates).</li>
+  <li>Week 7: <a href="https://www.cbssports.com/nfl/news/nfl-week-7-grades-falcons-buccaneers-giants-panthers/">CBS Sports</a> grades, <a href="https://sports.yahoo.com/articles/top-takeaways-ravens-week-7-023651262.html">Yahoo Sports</a> takeaways, <a href="https://www.espn.com/nfl/recap?gameId=401873012">ESPN</a> recap.</li>
+  <li>"Late for Work: Ian Rapoport Believes Lamar Jackson Will Play vs. Bills," <a href="https://www.baltimoreravens.com/news/late-for-work-ian-rapoport-lamar-jackson-rashod-bateman-scott-turner-zay-flowers">BaltimoreRavens.com</a>, Oct. 28, 2026 (Flowers screen touchdown).</li>
+  <li>Team tendencies, first seven games of 2026: <a href="https://www.sharpfootballanalysis.com/stats-nfl/nfl-offensive-personnel/">Sharp Football Analysis personnel</a>, <a href="https://www.sharpfootballanalysis.com/stats-nfl/nfl-coverage-schemes/">coverage schemes</a>, <a href="https://www.sharpfootballanalysis.com/stats-nfl/nfl-defensive-tendencies/">defensive tendencies</a>, <a href="https://www.sharpfootballanalysis.com/stats-nfl/nfl-offensive-tendencies-stats/">offensive tendencies</a>; FTN Data via nflverse as published by muffed.ai: <a href="https://muffed.ai/stats/motion-rate">motion</a>, <a href="https://muffed.ai/stats/play-action-rate">play-action</a>, <a href="https://muffed.ai/stats/defense-blitz-rate">blitz</a>, <a href="https://muffed.ai/stats/pass-rate-over-expected">pass rate over expected</a>, <a href="https://muffed.ai/stats/team-success-explosive">success and explosive rates</a>, <a href="https://muffed.ai/stats/stacked-box-rate">stacked</a> and <a href="https://muffed.ai/stats/light-box-rate">light</a> box rates, <a href="https://muffed.ai/stats/rpo-rate">RPO</a> and <a href="https://muffed.ai/stats/screen-pass-rate">screen</a> rates.</li>
+  <li>Week 3 finish: "Jackson's pass, alert timeout call lead to Loop's 56-yard field goal as Ravens beat Cowboys 34-31," <a href="https://www.clickorlando.com/sports/2026/09/28/jacksons-pass-alert-timeout-call-lead-to-loops-56-yard-field-goal-as-ravens-beat-cowboys-34-31/">Associated Press via ClickOrlando</a>, Sept. 28, 2026.</li>
+  <li>Special teams: "Ravens Special Teams Coordinator Praises Confidence of Young Specialists," <a href="https://www.si.com/nfl/ravens/onsi/ravens-special-teams-coordinator-praises-confidence-of-young-specialists-01kt4sv4pthd">Ravens On SI</a>, June 3, 2026; "Ryan Eckley officially named Ravens starting punter," <a href="https://spartanavenue.com/ryan-eckley-officially-named-ravens-starting-punter-after-huge-preseason-01m1ba632taw">Spartan Avenue</a>. Kickoff rules: NFL rulebook as summarized for the 2025 season; no 2026 changes were found.</li>
+  <li>Time to throw: NFL Next Gen Stats passing data through Week 7 of 2026, as republished by muffed.ai. No-huddle rate: Sharp Football Analysis offensive tendencies.</li>
+  <li>Coaching staff: <a href="https://www.baltimoreravens.com/news/ravens-announce-2026-coaching-staff">BaltimoreRavens.com</a>; injuries and starts: <a href="https://www.nbcsportsboston.com/nfl/lamar-jackson-ankle-injury-out-ravens-falcons-week-5/806474/">NBC Sports</a>, <a href="https://kfgo.com/2026/10/16/ravens-rule-out-qb-lamar-jackson-ankle-vs-browns/">Field Level Media</a>; results: <a href="https://www.baltimoreravens.com/schedule/2026/">BaltimoreRavens.com schedule</a>.</li>
+</ol>
+<h4>Further reading</h4>
+<ol class="sources">
+  <li>Pat Kirwan, <em>Take Your Eye Off the Ball</em> (2010; 2nd ed. 2015). The standard guide to watching the line and the secondary instead of the ball.</li>
+  <li>Chris B. Brown, <em>The Essential Smart Football</em> (2012) and <em>The Art of Smart Football</em> (2015). Concepts, coverages and their history.</li>
+  <li>Tim Layden, <em>Blood, Sweat and Chalk</em> (2010). The origins of zone blitzes, Cover 2, the West Coast offense and the zone read.</li>
+  <li>Bill Walsh, <em>Finding the Winning Edge</em> (1998). The source text for the timing-based passing game.</li>
+  <li>Dick LeBeau's zone blitz and the Tampa 2 of Tony Dungy and Monte Kiffin are traced in Layden (above) and in Brown, <em>The Art of Smart Football</em>.</li>
+</ol>
+</div>
+</section>
+</main>
+<footer><div class="col">Reading the Ravens · An interactive field guide. Diagrams are schematic; player positions are approximate. Not affiliated with the Baltimore Ravens or the NFL.</div></footer>
