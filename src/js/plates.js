@@ -35,11 +35,15 @@ function plateSVG(sp) {
   (sp.o || []).forEach(o => {
     const [x, y, f, lab] = o;
     const rr = 9.5 * sc;
-    if (f === 'C') h += `<rect x="${(+X(x) - rr * 0.95).toFixed(1)}" y="${(+Y(y) - rr * 0.95).toFixed(1)}" width="${(rr * 1.9).toFixed(1)}" height="${(rr * 1.9).toFixed(1)}" class="po"/>`;
-    else h += `<circle cx="${X(x)}" cy="${Y(y)}" r="${rr.toFixed(1)}" class="${f === 'K' ? 'pof' : 'po'}"/>`;
-    if (lab) h += `<text x="${X(x)}" y="${(+Y(y) + 0.5).toFixed(1)}" class="${f === 'K' ? 'polf' : 'pol'}" text-anchor="middle" dominant-baseline="central">${lab}</text>`;
+    const lbl = lab || (f === 'C' ? 'C' : '');
+    h += `<circle cx="${X(x)}" cy="${Y(y)}" r="${rr.toFixed(1)}" class="${f === 'K' ? 'pof' : 'po'}"/>`;
+    if (lbl) h += `<text x="${X(x)}" y="${(+Y(y) + 0.5).toFixed(1)}" class="${f === 'K' ? 'polf' : 'pol'}" text-anchor="middle" dominant-baseline="central">${lbl}</text>`;
   });
-  (sp.d || []).forEach(d => { h += `<text x="${X(d[0])}" y="${Y(d[1])}" class="pd${d[3] ? ' pdk' : ''}" text-anchor="middle" dominant-baseline="central">${d[2]}</text>`; });
+  (sp.d || []).forEach(d => {
+    const rr = 9.2 * sc, dx = +X(d[0]), dy = +Y(d[1]);
+    h += `<rect x="${(dx - rr).toFixed(1)}" y="${(dy - rr).toFixed(1)}" width="${(rr * 2).toFixed(1)}" height="${(rr * 2).toFixed(1)}" rx="${(2.6 * sc).toFixed(1)}" class="pdr${d[3] ? ' pdrk' : ''}"/>`;
+    h += `<text x="${dx.toFixed(1)}" y="${(dy + 0.5).toFixed(1)}" class="pd${d[3] ? ' pdk' : ''}" text-anchor="middle" dominant-baseline="central">${d[2]}</text>`;
+  });
   (sp.n || []).forEach(n => { h += `<circle cx="${X(n[0])}" cy="${Y(n[1])}" r="${(8.5 * sc).toFixed(1)}" class="pnum"/><text x="${X(n[0])}" y="${(+Y(n[1]) + .5).toFixed(1)}" class="pnumt" text-anchor="middle" dominant-baseline="central">${n[2]}</text>`; });
   (sp.tx || []).forEach(t => { h += `<text x="${X(t[0])}" y="${Y(t[1])}" class="ptx${t[3] ? ' ' + t[3] : ''}" text-anchor="${t[4] || 'middle'}">${t[2]}</text>`; });
   return h + '</svg>';
@@ -49,7 +53,7 @@ function mountPlates(host, list) {
   const wideSet = list.some(sp => sp.v && (sp.v.x1 - sp.v.x0) > 30 || !sp.v);
   host.classList.add(host.dataset.cols === '3' || !wideSet ? 'cols3' : 'cols2');
   if (host.dataset.title) hx('div', { class: 'plates-head' }, host, '<b>' + host.dataset.title + '</b>' + (host.dataset.sub ? '<span>' + host.dataset.sub + '</span>' : ''));
-  if (host.dataset.key != null) hx('p', { class: 'plate-key' }, host, 'Circles: offense (filled: the ball carrier or key player). Letters: defense. Red: the read, the key defender or the decisive action. Dashed grey: defender movement and zones. Circled numbers: the order of the quarterback\'s reads.');
+  if (host.dataset.key != null) hx('p', { class: 'plate-key' }, host, 'Circles (◯): offense (filled: the ball carrier or key player). Squares (▢): defense. Red: the read, the key defender or the decisive action. Dashed grey: defender movement and zones. Circled numbers: the order of the quarterback\'s reads.');
   list.forEach(sp => {
     const f = hx('figure', { class: 'plate' + (sp.tall ? ' tall' : '') }, host);
     f.innerHTML = plateSVG(sp) + `<figcaption><b>${sp.t}</b>${sp.c}</figcaption>`;
