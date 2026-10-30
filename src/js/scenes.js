@@ -294,7 +294,7 @@ const sc_disguise = {
   ],
   zones: [
     { t0: 0.7, cx: 8.9, cy: 19, rx: 8.4, ry: 4, label: 'Deep ⅓' }, { t0: 0.7, cx: MID, cy: 20, rx: 8.4, ry: 4, label: 'Deep ⅓' }, { t0: 0.7, cx: 44.4, cy: 19, rx: 8.4, ry: 4, label: 'Deep ⅓' },
-    { t0: 0.9, cx: 41.5, cy: 8, rx: 5, ry: 3, label: 'Buzz' }
+    { t0: 0.9, cx: 41.5, cy: 8, rx: 5, ry: 3, label: 'Sky (curl-flat)' }
   ],
   labels: [{ t0: -1.6, t1: -0.05, x: MID, y: 17.5, text: 'TWO HIGH: Cover 2, 4 or 6?' }, { t0: 1.0, t1: 3.4, x: MID, y: 23, text: 'ONE HIGH: Cover 3' }],
   rings: [[-1.5, -0.6, 'MS'], [-1.5, -0.6, 'KH'], [0, 1.2, 'MS'], [0.2, 1.6, 'KH']],
@@ -302,7 +302,7 @@ const sc_disguise = {
     [-1.5, 'Pre-snap. The Ravens show two deep safeties at about 13 yards. To a quarterback that is a <span class="g" data-g="mofo">middle-of-the-field-open</span> shell: Cover 2, 4 or 6. The deep middle should be empty.'],
     [-0.6, 'Late movement. In the final half-second the corners widen and give ground. Disguise lives in these last moments, after the quarterback has made his read.'],
     [0, 'Snap: the <span class="g" data-g="rotation">rotation</span>. One safety sprints to the deep middle; the other spins down toward the flat. Two-high has become one-high.'],
-    [0.9, 'The corners <span class="g" data-g="bail">bail</span> to deep thirds. The coverage is <span class="g" data-g="cover-3">Cover 3</span>, with the rotated safety as the "buzz" defender underneath.'],
+    [0.9, 'The corners <span class="g" data-g="bail">bail</span> to deep thirds. The coverage is <span class="g" data-g="cover-3">Cover 3</span>, with the rotated safety as the "sky" defender in the curl-flat, outside the slot receiver.'],
     [1.6, 'The out route the quarterback expected to throw against a squatting Cover 2 corner now runs straight at the rotated safety.'],
     [2.9, 'Everything is capped. The quarterback holds the ball, and a normal four-man rush gets home.']
   ],
@@ -370,7 +370,7 @@ const sc_fit = {
     pO('Z', 'Z', 45, -0.9, [[44.6, 4.6]], { kind: 'block', v: 6 }),
     pBD('TH', 'TH', T(-5.5), 1, [[T(-3), -0.4]], { kind: 'rush', v: 3, name: 'Trey Hendrickson' }),
     pBD('TJ', 'TJ', T(-1.1), 0.9, [[T(0.4), 0.8]], { kind: 'rush', v: 3, name: 'Travis Jones' }),
-    pBD('NM', 'NM', T(3.3), 0.9, [[T(4.2), 1.6]], { kind: 'rush', v: 3, name: 'Nnamdi Madubuike' }),
+    pBD('BW', 'BW', T(3.3), 0.9, [[T(4.2), 1.6]], { kind: 'rush', v: 3, name: 'Broderick Washington' }),
     pBD('TR', 'TR', T(7.8), 1, [[T(8.4), 0.4], [T(7.8), 0.6]], { kind: 'rush', v: 3, name: 'Tavius Robinson' }),
     pBD('RS', 'RS', T(1.8), 4.8, [[T(5.6), 2.8], [T(6.4), 2.0, 1.4]], { v: 6, d: 0.15, name: 'Roquan Smith' }),
     pBD('TB', 'TB', T(-2.4), 4.8, [[T(1.6), 3.4], [T(4.8), 3.0, 1.85]], { v: 5.5, d: 0.2, name: 'Teddye Buchanan' }),
@@ -766,7 +766,7 @@ const PERS = {
   '12': { d: 'base', label: '12', head: '12 personnel: 1 back, 2 tight ends, 2 receivers', def: 'Base (4 defensive backs) or big nickel', text: 'Two tight ends can block like linemen or run routes like receivers. If the defense stays in nickel, the offense runs; if it goes base, the offense spreads the tight ends out and throws against linebackers. Declan Doyle\'s 2025 Bears used 12 personnel on 34.4% of plays, sixth-most in the league; his 2026 Ravens used it on 32%.' },
   '21': { d: 'base', label: '21', head: '21 personnel: 2 backs, 1 tight end, 2 receivers', def: 'Base', text: 'A fullback adds a lead blocker and makes the defense commit a linebacker to the run. Classic I-formation football, now mostly used in short yardage and to build play-action.' },
   '22': { d: 'heavy', label: '22', head: '22 personnel: 2 backs, 2 tight ends, 1 receiver', def: 'Base or heavy (8 in the box)', text: 'Nine potential blockers. Over the five seasons through 2025 the Ravens used 22 personnel on 14.4% of snaps, almost twice as often as any other team (TSN). Under Doyle it has nearly vanished (about 1% with 21 personnel included): the extra blockers are now tight ends. It forces the defense to bring big bodies, which is precisely when play-action shots work.' },
-  '13': { d: 'base', label: '13', head: '13 personnel: 1 back, 3 tight ends, 1 receiver', def: 'Base', text: 'Three tight ends: a short-yardage and goal-line look that can still pass. The Ravens used it on 14% of plays in their first seven games, an unusually high share. The 2026 room includes Mark Andrews, Durham Smythe and rookies Matthew Hibner and Josh Cuevas.' },
+  '13': { d: 'base', label: '13', head: '13 personnel: 1 back, 3 tight ends, 1 receiver', def: 'Base', text: 'Three tight ends: a short-yardage and goal-line look that can still pass. The Ravens used it on 14% of plays in their first seven games, an unusually high share. The 2026 room opened with Mark Andrews, Durham Smythe and rookies Matthew Hibner and Josh Cuevas; Smythe tore his Achilles in Week 4 against Tennessee, and the two rookies absorbed his snaps.' },
   '10': { d: 'dime', label: '10', head: '10 personnel: 1 back, 0 tight ends, 4 receivers', def: 'Dime (6 defensive backs)', text: 'Four receivers stretch the field sideline to sideline. Defenses answer with a sixth defensive back (<span class="g" data-g="dime">dime</span>). In Week 1 Minter played some form of dime on every third down of four yards or more.' },
 };
 function persScene(k) {
@@ -938,7 +938,7 @@ const FRONTS = [
       ['W', 'W', T(-2), 5.2, ''], ['M', 'M', T(3.2), 5.2, 'C-R'],
       ['LC', 'CB', 9.4, 7, ''], ['RC', 'CB', 45, 7, ''], ['FS', 'S', T(-6.4), 12.5, ''], ['SS', 'S', T(6.4), 12.5, '']],
     side: '<h6>Tite (also called mint)</h6><p class="why"><b>Alignment.</b> A nose on the center and two ends on the inside shoulders of the tackles (4i). The center and both tackles are covered; both guards are uncovered but have a lineman on each side of them, so they struggle to climb cleanly.</p><p class="why"><b>Logic.</b> The A and B gaps, where zone runs and duo want to hit, are filled by three big bodies. Runs are pushed outside, toward edge players and safeties who fill from depth. That lets the defense keep <b>two safeties high</b> against the run, the foundation of Vic Fangio\'s defense and its descendants, including Jesse Minter\'s.</p><p class="why"><b>How offenses attack it.</b> Outside zone, toss and perimeter runs; spread formations that pull the linebackers out of the box.</p><p class="why"><b>Context.</b> Minter\'s 2025 Chargers played base personnel on only 18% of snaps (sixth-lowest) and a light box on 45% (fourth-highest), per The Banner: the two-high, light-box trade this front is built for.</p>' },
-  { key: 'bear', label: 'Bear', title: 'Bear front: the center and both guards covered', tag: 'Even front · 8-man box',
+  { key: 'bear', label: 'Bear', title: 'Bear front: the center and both guards covered', tag: 'Odd-family front · 8-man box',
     D: [['E1', 'E', T(-6.2), 0.9, 'C-L', '5w'], ['T1', 'T', T(-3.1), 0.9, 'B-L', '3'], ['N', 'N', MID, 0.9, 'A-L+A-R', '0'], ['T2', 'T', T(3.1), 0.9, 'B-R', '3'], ['E2', 'E', T(7.7), 1.0, 'D-R', '9'],
       ['S', 'S', T(5.5), 4.0, 'C-R'], ['M', 'M', T(-1.4), 5, ''], ['SS', 'SS', T(-7.6), 5.2, ''],
       ['LC', 'CB', 9.2, 2, ''], ['RC', 'CB', 45, 2, ''], ['FS', 'FS', MID, 14, '']],
@@ -952,7 +952,7 @@ const FRONTS = [
     D: [['TH', 'TH', T(-6.6), 1.0, 'C-L', '5w', 'Trey Hendrickson (OLB)'], ['NM', 'NM', T(-3.1), 0.9, 'B-L', '3', 'Nnamdi Madubuike'], ['TJ', 'TJ', T(0.9), 0.9, 'A-R', '1', 'Travis Jones'], ['TR', 'TR', T(7.7), 1.0, 'D-R', '9', 'Tavius Robinson (OLB)'],
       ['TB', 'TB', T(-1.1), 4.7, 'A-L', '', 'Teddye Buchanan'], ['RS', 'RS', T(2.8), 4.9, 'B-R', '', 'Roquan Smith'], ['KH', 'KH', T(10.8), 4.6, 'C-R', '', 'Kyle Hamilton (overhang)'],
       ['NW', 'NW', 9.4, 7, '', '', 'Nate Wiggins'], ['MH', 'MH', 45, 7, '', '', 'Marlon Humphrey'], ['JH', 'JH', T(-6.4), 12.5, '', '', 'Jaylinn Hawkins'], ['MS', 'MS', T(6.4), 12.5, '', '', 'Malaki Starks']],
-    side: '<h6>The Ravens\' base, in practice</h6><p class="why"><b>Personnel.</b> Two interior linemen, two outside linebackers who stand up on the edges, two inside linebackers, two corners and three safeties. In Week 1 the Ravens used it on 28 of 53 snaps; base 3-4 personnel appeared twice.</p><p class="why"><b>Why it looks like a four-man front.</b> With the outside linebackers on the line, it plays like a 4-2-5 even front. "3-4" and "4-3" describe who is on the field; the front describes where they stand.</p><p class="why"><b>The trade.</b> The box holds six; Hamilton is the seventh run defender, entering from outside as the force player while two safeties stay deep. Through seven games the Ravens played a light box on 55% of snaps, second-most in the league.</p><p class="recon">Alignment illustrative; personnel counts from Filmstudy Baltimore, box rate from Sharp Football Analysis.</p>' },
+    side: '<h6>The Ravens\' base, in practice</h6><p class="why"><b>Personnel.</b> Two interior linemen, two outside linebackers who stand up on the edges, two inside linebackers, two corners and three safeties. In Week 1 the Ravens used it on 28 of 53 snaps; base 3-4 personnel appeared twice.</p><p class="why"><b>Why it looks like a four-man front.</b> With the outside linebackers on the line, it plays like a 4-2-5 even front. "3-4" and "4-3" describe who is on the field; the front describes where they stand.</p><p class="why"><b>The trade.</b> The box holds six; Hamilton is the seventh run defender, entering from outside as the force player while two safeties stay deep. Through seven games the Ravens played a light box on 55% of snaps, second-most in the league.</p><p class="recon">Alignment illustrative; personnel counts from Filmstudy Baltimore, box rate from Sharp Football Analysis. Madubuike is shown as the current 3-technique: he missed Weeks 1–2 after April 2026 neck surgery and debuted in Week 3 against Dallas, so Broderick Washington and Calais Campbell took the interior snaps in the opener.</p>' },
   { key: 'rushdime', ravens: true, gun: true, label: 'Ravens rush dime', title: 'Ravens rush dime: four pass rushers, six defensive backs', tag: 'Ravens · obvious passing downs',
     D: [['TH', 'TH', T(-7.2), 1.0, 'rush', 'w', 'Trey Hendrickson'], ['CC', 'CC', T(-3.1), 0.9, 'rush', '3', 'Calais Campbell'], ['TR', 'TR', T(2.0), 0.9, 'rush', '2i', 'Tavius Robinson (kicked inside)'], ['MG', 'MG', T(7.4), 1.0, 'rush', 'w', 'Mike Green'],
       ['RS', 'RS', T(0.4), 5.4, '', '', 'Roquan Smith'], ['KH', 'KH', 16.4, 5.4, '', '', 'Kyle Hamilton'], ['KM', 'KM', 38.6, 5.4, '', '', 'Keyon Martin'],
