@@ -247,7 +247,7 @@ const sc_rpo = {
   rings: [[0, 0.85, 'NB'], [0.85, 2.7, 'H']],
   beats: [
     [-0.6, 'Pre-snap. The nickel defender aligns between the box and the slot receiver. He is responsible for the run if it bounces outside and for the slot receiver if he runs a quick route. He cannot do both.'],
-    [0, 'Snap. The line run-blocks inside zone to the left, so they never pass-set. Linemen may block downfield up to one yard on a legal pass, which is why RPO throws come out fast and short.'],
+    [0, 'Snap. The line run-blocks inside zone to the left, so they never pass-set. Under NFL rules linemen may not be more than a yard downfield when a pass that crosses the line is thrown, which is why RPO throws come out fast and short.'],
     [0.5, 'The QB rides the ball in Henry\'s belly with his eyes on the nickel. If the nickel stays wide, it is a handoff into a box with one fewer defender.'],
     [0.8, 'The nickel triggers on the run. Lamar pulls the ball and throws the slant into the space he just left.'],
     [1.2, 'The defense guessed right on the run and still lost. That is the point of the RPO: the defender\'s correct reaction becomes the wrong one.']
