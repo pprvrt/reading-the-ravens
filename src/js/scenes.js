@@ -24,7 +24,7 @@ const sc_boot = {
     pB('Y', 'Y', T(6.6), -1.1, [[31.5, 1.5], [22, 3.5], [13, 4.5], [9.5, 4.5]], { v: 6.5, d: 0.3 }),
     pB('U', 'U', T(8.8), -2.2, [[37.2, 0.6]], { kind: 'block', v: 4, on: 'SL' }),
     pB('X', 'X', 9, -0.9, [[9, 10.5], [11.5, 12], [21, 12.8, 2.85], { v: 8.8 }, [18.5, 21], [15.5, 30], [13.4, 37]], { v: 8, name: 'Zay Flowers' }),
-    pB('Z', 'Z', 45.5, -0.9, [[45.5, 9], [40, 15], [30, 19], [22, 21]], { v: 8 }),
+    pB('Z', 'Z', 45.5, -1.6, [[45.5, 9], [40, 15], [30, 19], [22, 21]], { v: 8 }),
     pOD('E1', 'E', 20.5, 0.9, [[22.5, -1], [22, -3.5], [20, -5.6]], { kind: 'rush', v: 4.2, d: 0.1 }),
     pOD('T1', 'T', 24.5, 0.9, [[26.2, 0.2]], { kind: 'rush', v: 3 }),
     pOD('T2', 'T', 29.2, 0.9, [[31, -0.2]], { kind: 'rush', v: 3 }),
@@ -105,7 +105,7 @@ const sc_choice = {
     pB('ZF', 'F', T(-1.9), -5, [[T(-3.2), -2.4], [T(-3.9), 2.5], [T(-3.9), 5.6, 1.35], [T(-4.4), 6.4, 1.5], [T(-3.1), 9.6, 2.0], { v: 9.5 }, [T(-1.2), 18], [T(0.8), 27.5], [T(1.4), 33]], { v: 8, name: 'Zay Flowers, aligned in the backfield' }),
     pB('RB', 'RB', T(1.9), -5, [[T(3.8), -3.2]], { kind: 'block', v: 5, on: 'E2' }),
     pB('X', 'X', 8, -0.9, [[8, 8], [9, 26]], { v: 8 }),
-    pB('Z', 'Z', 46, -0.9, [[46, 26]], { v: 8.4 }),
+    pB('Z', 'Z', 46, -1.6, [[46, 26]], { v: 8.4 }),
     pB('Y', 'Y', T(6.6), -1.1, [[T(7.2), 8], [T(6.6), 24]], { v: 7 }),
     pOD('CAR', 'LB', T(-1), 4.5, [[T(-0.8), 1.2], [T(-0.5), -2.8], [T(-0.1), -4.7, 1.62]], { kind: 'rush', v: 6.5, name: 'Jaylon Carlies (free blitzer)' }),
     pOD('HAU', 'S', T(-6), 10, [[T(-5), 7.4, 1.45], [T(-4.6), 6.2, 1.7], [T(-3.6), 6.6, 1.95], [T(-2.8), 9.2, 2.35]], { name: 'A.J. Haulcy' }),
@@ -146,7 +146,7 @@ const sc_oz = {
     pB('Y', 'Y', T(6.6), -1.1, [[T(8.4), 1.0]], { kind: 'block', v: 3.6, on: 'E2' }),
     pB('U', 'U', T(8.8), -2.2, [[T(10.6), 0.5], [T(11.6), 3.8]], { kind: 'block', v: 5, on: 'SL' }),
     pB('X', 'X', 16, -0.9, [[17.6, 7], [T(-2), 14.6], [T(5), 19.4], [T(6.6), 21.8]], { kind: 'block', v: 8.6, name: 'Chris Moore', on: 'FS' }),
-    pB('Z', 'Z', 45, -0.9, [[45, 5], [43.6, 8.4]], { kind: 'block', v: 6, name: 'Rashod Bateman', on: 'RC' }),
+    pB('Z', 'Z', 45, -1.6, [[45, 5], [43.6, 8.4]], { kind: 'block', v: 6, name: 'Rashod Bateman', on: 'RC' }),
     pOD('E1', 'E', T(-5.3), 0.9, [[T(-3.2), -0.6]], { kind: 'rush', v: 3 }),
     pOD('T1', 'T', T(-1.1), 0.9, [[T(0.6), 0.8]], { kind: 'rush', v: 3 }),
     pOD('T2', 'T', T(3.3), 0.9, [[T(4.4), 1.2]], { kind: 'rush', v: 3 }),
@@ -190,7 +190,7 @@ const sc_screen = {
     pB('X', 'X', 8.5, -0.9, [[8.6, 1.2], [9.8, 0.6], [13.5, -1.2, 1.1], [16, 3], [17.5, 12], [19.2, 24.5], [20.4, 31]], { kind: 'run', v: 8.4, name: 'Zay Flowers' }),
     pB('H', 'H', 15.5, -1.6, [[12.2, 1.8], [10.8, 3]], { kind: 'block', v: 6, on: 'LC' }),
     pB('Y', 'Y', T(6.6), -1.1, [[T(7), 7], [T(6), 14]], { v: 6.5, kind: 'block', on: 'FS', name: 'Tight end (clear-out, then blocks downfield)' }),
-    pB('Z', 'Z', 45.5, -0.9, [[45.5, 14]], { v: 8 }),
+    pB('Z', 'Z', 45.5, -1.6, [[45.5, 14]], { v: 8 }),
     pOD('LC', 'CB', 8.8, 6, [[9.6, 4.5], [11.2, 3.2]], { v: 5 }),
     pOD('NB', 'N', 15.6, 5, [[15.8, 5.4], [15, 3.4]], { v: 4, d: 0.3 }),
     pOD('W', 'W', T(-3.5), 5, [[T(-6), 4.6], [T(-8), 6.4], { w: 0.4 }], { v: 4.5, d: 0.5 }),
@@ -229,7 +229,7 @@ const sc_rpo = {
     pB('RB', 'RB', T(1.8), -5, [[T(-0.8), -4.4, 0.5], [T(-3.4), -2.4], [T(-4), -0.2]], { kind: 'fake', v: 6, name: 'Derrick Henry' }),
     pB('H', 'H', 38, -1.6, [[39.2, 1.8], [35.8, 5.6], [33, 7.4], [30.6, 11], [29.4, 15]], { v: 8, name: 'Zay Flowers' }),
     pB('Z', 'Z', 46, -0.9, [[46, 5], [46, 9]], { v: 6, name: 'Rashod Bateman' }),
-    pB('X', 'X', 7.5, -0.9, [[7.5, 4], [8, 6]], { kind: 'block', v: 6 }),
+    pB('X', 'X', 7.5, -1.6, [[7.5, 4], [8, 6]], { kind: 'block', v: 6 }),
     pB('Y', 'Y', T(-6.6), -1.1, [[T(-7.6), 1.2]], { kind: 'block', v: 3.6, name: 'Mark Andrews' }),
     pOD('NB', 'N', 37, 4.6, [[35, 3.2], [33, 1.6]], { v: 5, d: 0.2, name: 'Conflict defender' }),
     pOD('E1', 'E', T(-8.5), 0.9, [[T(-7.8), 0.4]], { kind: 'rush', v: 3 }),
@@ -367,7 +367,7 @@ const sc_fit = {
     pO('Y', 'Y', T(6.6), -1.1, [[T(8.6), 0.8]], { kind: 'block', v: 3.6 }),
     pO('U', 'U', T(8.8), -2.2, [[T(10.6), 0.2]], { kind: 'block', v: 4 }),
     pO('X', 'X', 9, -0.9, [[10, 5]], { kind: 'block', v: 6 }),
-    pO('Z', 'Z', 45, -0.9, [[44.6, 4.6]], { kind: 'block', v: 6 }),
+    pO('Z', 'Z', 45, -1.6, [[44.6, 4.6]], { kind: 'block', v: 6 }),
     pBD('TH', 'TH', T(-5.5), 1, [[T(-3), -0.4]], { kind: 'rush', v: 3, name: 'Trey Hendrickson' }),
     pBD('TJ', 'TJ', T(-1.1), 0.9, [[T(0.4), 0.8]], { kind: 'rush', v: 3, name: 'Travis Jones' }),
     pBD('BW', 'BW', T(3.3), 0.9, [[T(4.2), 1.6]], { kind: 'rush', v: 3, name: 'Broderick Washington' }),
@@ -453,7 +453,7 @@ function lineScene(kind) {
     pOD('SS', 'SS', T(8), 11, moves.SS, { v: 5 }),
   ];
   const Y = (m, k) => pB('Y', 'Y', T(6.6), -1.1, m, { kind: k || 'block', v: 4.5, name: 'Mark Andrews' });
-  const U = (m, k) => pB('U', 'U', T(-6.6), -1.1, m, { kind: k || 'block', v: 4.5, name: 'Durham Smythe' });
+  const U = (m, k) => pB('U', 'U', T(-6.6), -1.8, m, { kind: k || 'block', v: 4.5, name: 'Durham Smythe' });
   if (kind === 'run') return Object.assign(base, {
     title: 'Run: low hats, moving forward and sideways',
     players: [
@@ -461,7 +461,7 @@ function lineScene(kind) {
       pB('QB', 'QB', MID, -2.9, [[T(3), -3.5, 0.55], [T(2.6), -5]], { kind: 'none', name: 'Lamar Jackson' }),
       pB('RB', 'RB', MID, -7, [[T(2.6), -4.6], [T(5.8), -2.3, 0.95], [T(7.8), 0.4], [T(8.6), 4.6], [T(9.4), 8.6]], { kind: 'run', v: 8, name: 'Derrick Henry' }),
       Y([[T(8.6), 1.0]]), U([[T(-4.6), 0.6]]),
-      pB('X', 'X', 9, -0.9, [[9.4, 5], [9.6, 6]], { kind: 'block', v: 5 }), pB('Z', 'Z', 45, -0.9, [[44.8, 5]], { kind: 'block', v: 5 }),
+      pB('X', 'X', 9, -0.9, [[9.4, 5], [9.6, 6]], { kind: 'block', v: 5 }), pB('Z', 'Z', 45, -1.6, [[44.8, 5]], { kind: 'block', v: 5 }),
       ...D({ E1: [[T(-4.6), 0.2]], T1: [[T(0.6), 1.2]], T2: [[T(4.4), 1.8]], E2: [[T(10.4), 0.8]], W: [[T(1), 3.8], [T(3.6), 3.4]], M: [[T(4.6), 3.6], [T(6), 3.8]], SL: [[T(8.6), 3.2]], LC: [[9.2, 7.4]], RC: [[44.6, 6.6]], FS: [[T(0), 12]], SS: [[T(8.6), 8]] })
     ],
     ball: [{ t: 0.6, pass: 'RB', at: 0.66 }], rings: [[0, 0.8, 'LG'], [0, 0.8, 'RG']], end: 2.4,
@@ -479,7 +479,7 @@ function lineScene(kind) {
       pB('QB', 'QB', MID, -2.9, [[MID, -7.6, 0.95], [MID, -7.2]], { kind: 'drop', v: 6, name: 'Lamar Jackson' }),
       pB('RB', 'RB', MID, -7, [[T(-2.4), -5]], { kind: 'block', v: 3.6, name: 'Derrick Henry' }),
       Y([[T(7.2), 6], [T(11.2), 7.4]], 'route'), U([[T(-6.2), 4], [T(-4.6), 9.5]], 'route'),
-      pB('X', 'X', 9, -0.9, [[9, 12], [10.4, 10.4]], { v: 7.8, name: 'Zay Flowers' }), pB('Z', 'Z', 45, -0.9, [[45, 14], [34, 15.4]], { v: 7.8, name: 'Rashod Bateman' }),
+      pB('X', 'X', 9, -0.9, [[9, 12], [10.4, 10.4]], { v: 7.8, name: 'Zay Flowers' }), pB('Z', 'Z', 45, -1.6, [[45, 14], [34, 15.4]], { v: 7.8, name: 'Rashod Bateman' }),
       ...D({ E1: [[T(-6), -1.8], [T(-5.4), -3.2]], T1: [[T(-1.2), -1.6]], T2: [[T(3), -1.6]], E2: [[T(8.6), -1.6], [T(6.6), -3.4]], W: [[T(-4.6), 8.6]], M: [[T(1), 9.6]], SL: [[T(8.4), 7.6]], LC: [[9.6, 11]], RC: [[44.6, 12]], FS: [[T(-4), 15]], SS: [[T(6), 15]] })
     ],
     rings: [[0, 0.8, 'LT'], [0, 0.8, 'RT']],
@@ -497,7 +497,7 @@ function lineScene(kind) {
       pB('QB', 'QB', MID, -2.9, [[T(1.6), -3.6, 0.6], [T(1), -6.6], [T(0.2), -8]], { kind: 'drop', v: 5, name: 'Lamar Jackson' }),
       pB('RB', 'RB', MID, -7, [[T(2.6), -4.4], [T(4.2), -2.6]], { kind: 'fake', v: 6, name: 'Derrick Henry' }),
       Y([[T(8.4), 0.4]]), U([[T(-6.6), 6], [T(2), 13.5], [T(10), 15]], 'route'),
-      pB('X', 'X', 9, -0.9, [[9.4, 12], [17, 22]], { v: 8, name: 'Zay Flowers' }), pB('Z', 'Z', 45, -0.9, [[45, 9], [42, 16], [36, 20]], { v: 8, name: 'Rashod Bateman' }),
+      pB('X', 'X', 9, -0.9, [[9.4, 12], [17, 22]], { v: 8, name: 'Zay Flowers' }), pB('Z', 'Z', 45, -1.6, [[45, 9], [42, 16], [36, 20]], { v: 8, name: 'Rashod Bateman' }),
       ...D({ E1: [[T(-4.6), -0.2], [T(-4.2), -2.4]], T1: [[T(0.2), 0.4]], T2: [[T(3.6), 0.6]], E2: [[T(9.6), -0.6]], W: [[T(-1), 3.4], [T(-1.6), 7]], M: [[T(2.8), 3.4], [T(2.2), 7]], SL: [[T(7.6), 3], [T(7.8), 5.6]], LC: [[9.4, 9], [11.6, 15]], RC: [[44.8, 10], [41, 16]], FS: [[T(-1.6), 13], [T(-4), 17]], SS: [[T(7.4), 8.4]] })
     ],
     rings: [[0, 0.9, 'LG'], [0, 0.9, 'C'], [0.5, 1.4, 'M']],
@@ -518,7 +518,7 @@ function lineScene(kind) {
       pB('QB', 'QB', MID, -2.9, [[MID, -7.4, 0.95], [T(0.6), -8.2, 1.5]], { kind: 'drop', v: 5, name: 'Lamar Jackson' }),
       pB('RB', 'RB', MID, -7, [[T(-1.6), -5.6], { w: 0.45 }, [T(-6), -3.4], [T(-8), -2.8], [T(-9), 3], [T(-9.6), 8]], { kind: 'route', v: 6, name: 'Derrick Henry' }),
       Y([[T(7.2), 9], [T(7.4), 14]], 'route'), U([[T(-6.2), 2.4], [T(-7.6), 4]]),
-      pB('X', 'X', 9, -0.9, [[9, 12]], { v: 7.8 }), pB('Z', 'Z', 45, -0.9, [[45, 15]], { v: 7.8 }),
+      pB('X', 'X', 9, -0.9, [[9, 12]], { v: 7.8 }), pB('Z', 'Z', 45, -1.6, [[45, 15]], { v: 7.8 }),
       ...D({ E1: [[T(-5.6), -2], [T(-3), -5.4]], T1: [[T(-1.2), -2.2], [T(-0.4), -5.8]], T2: [[T(3), -2]], E2: [[T(8.6), -1.6], [T(6.4), -3.6]], W: [[T(-4.6), 8]], M: [[T(1), 9]], SL: [[T(8.4), 7.6]], LC: [[9.4, 11]], RC: [[44.6, 12]], FS: [[T(-4), 15]], SS: [[T(6), 15]] })
     ],
     ball: [{ t: 1.45, pass: 'RB', at: 1.75 }], rings: [[0.3, 1.2, 'T1'], [0.3, 1.2, 'E1']], end: 2.9, t: [-0.4, 3.0],
@@ -540,7 +540,7 @@ function lineScene(kind) {
       pB('QB', 'QB', MID, -2.9, [[T(2), -3.6, 0.6], [T(1.6), -5]], { kind: 'none', name: 'Lamar Jackson' }),
       pB('RB', 'RB', MID, -7, [[T(-0.8), -6.4, 0.3], [T(2.4), -4], [T(5.2), -1.2], [T(6.4), 2.2], [T(7.6), 7]], { kind: 'run', v: 6.6, name: 'Derrick Henry' }),
       Y([[T(5.4), 0.8]]), U([[T(-7.6), 0.6]]),
-      pB('X', 'X', 9, -0.9, [[9.4, 5]], { kind: 'block', v: 5 }), pB('Z', 'Z', 45, -0.9, [[44.8, 5]], { kind: 'block', v: 5 }),
+      pB('X', 'X', 9, -0.9, [[9.4, 5]], { kind: 'block', v: 5 }), pB('Z', 'Z', 45, -1.6, [[44.8, 5]], { kind: 'block', v: 5 }),
       ...D({ E1: [[T(-5), 0.2], [T(-3.4), -1.4]], T1: [[T(-0.2), 1.2]], T2: [[T(2.6), 1.6]], E2: [[T(9), 0.4]], W: [[T(1.6), 4], [T(4.6), 3.6]], M: [[T(4.4), 3.4], [T(6.8), 3]], SL: [[T(8.6), 2.6]], LC: [[9.2, 7.4]], RC: [[44.6, 6.6]], FS: [[T(0), 12]], SS: [[T(8.6), 8]] })
     ],
     ball: [{ t: 0.55, pass: 'RB', at: 0.6 }], rings: [[0, 1.2, 'LG']], end: 2.9, t: [-0.4, 3.0],
@@ -739,12 +739,12 @@ function formation(pers) {
   OLN.forEach((n, i) => add(n, n, OLX[i], -0.9));
   const uc = pers !== '11' && pers !== '10';
   add('QB', 'QB', MID, uc ? -2.9 : -5, 'Lamar Jackson');
-  if (pers === '11') { add('RB', 'RB', T(1.8), -5, 'Derrick Henry'); add('Y', 'Y', T(6.6), -1.1, 'Mark Andrews'); add('X', 'X', 7, -0.9, 'Rashod Bateman'); add('H', 'H', 15.6, -1.6, 'Zay Flowers'); add('Z', 'Z', 46.3, -0.9, "Ja'Kobi Lane"); }
+  if (pers === '11') { add('RB', 'RB', T(1.8), -5, 'Derrick Henry'); add('Y', 'Y', T(6.6), -1.1, 'Mark Andrews'); add('X', 'X', 7, -0.9, 'Rashod Bateman'); add('H', 'H', 15.6, -1.6, 'Zay Flowers'); add('Z', 'Z', 46.3, -1.6, "Ja'Kobi Lane"); }
   if (pers === '10') { add('RB', 'RB', T(1.8), -5, 'Derrick Henry'); add('X', 'X', 7, -0.9); add('H', 'H', 15.6, -1.6, 'Zay Flowers'); add('Y', 'F', 37.6, -1.6); add('Z', 'Z', 46.3, -0.9); }
-  if (pers === '12') { add('RB', 'RB', MID, -7, 'Derrick Henry'); add('Y', 'Y', T(6.6), -1.1, 'Mark Andrews'); add('U', 'U', T(8.8), -2.2, 'Durham Smythe'); add('X', 'X', 9, -0.9, 'Zay Flowers'); add('Z', 'Z', 45, -0.9, 'Rashod Bateman'); }
-  if (pers === '21') { add('F', 'FB', MID, -5.1); add('RB', 'RB', MID, -7.4, 'Derrick Henry'); add('Y', 'Y', T(6.6), -1.1, 'Mark Andrews'); add('X', 'X', 9, -0.9, 'Zay Flowers'); add('Z', 'Z', 45, -0.9, 'Rashod Bateman'); }
-  if (pers === '22') { add('F', 'FB', MID, -5.1); add('RB', 'RB', MID, -7.4, 'Derrick Henry'); add('Y', 'Y', T(6.6), -1.1, 'Mark Andrews'); add('U', 'U', T(-6.6), -1.1, 'Durham Smythe'); add('Z', 'Z', 44, -0.9, 'Zay Flowers'); }
-  if (pers === '13') { add('RB', 'RB', MID, -7, 'Derrick Henry'); add('Y', 'Y', T(6.6), -1.1, 'Mark Andrews'); add('U', 'U', T(-6.6), -1.1, 'Durham Smythe'); add('F', 'F', T(8.8), -2.2, 'Matthew Hibner'); add('X', 'X', 9, -0.9, 'Zay Flowers'); }
+  if (pers === '12') { add('RB', 'RB', MID, -7, 'Derrick Henry'); add('Y', 'Y', T(6.6), -1.1, 'Mark Andrews'); add('U', 'U', T(8.8), -2.2, 'Durham Smythe'); add('X', 'X', 9, -0.9, 'Zay Flowers'); add('Z', 'Z', 45, -1.6, 'Rashod Bateman'); }
+  if (pers === '21') { add('F', 'FB', MID, -5.1); add('RB', 'RB', MID, -7.4, 'Derrick Henry'); add('Y', 'Y', T(6.6), -1.1, 'Mark Andrews'); add('X', 'X', 9, -0.9, 'Zay Flowers'); add('Z', 'Z', 45, -1.6, 'Rashod Bateman'); }
+  if (pers === '22') { add('F', 'FB', MID, -5.1); add('RB', 'RB', MID, -7.4, 'Derrick Henry'); add('Y', 'Y', T(6.6), -1.1, 'Mark Andrews'); add('U', 'U', T(-6.6), -1.1, 'Durham Smythe'); add('Z', 'Z', 44, -1.6, 'Zay Flowers'); }
+  if (pers === '13') { add('RB', 'RB', MID, -7, 'Derrick Henry'); add('Y', 'Y', T(6.6), -1.1, 'Mark Andrews'); add('U', 'U', T(-6.6), -1.8, 'Durham Smythe'); add('F', 'F', T(8.8), -2.2, 'Matthew Hibner'); add('X', 'X', 9, -0.9, 'Zay Flowers'); }
   return L;
 }
 function defense(pkg, pers) {
@@ -842,8 +842,8 @@ const sc_q_box = {
     ...OL5('B', [[[T(-3.6), 0.3]], [[T(-1.2), 0.5]], [[T(1), 0.5]], [[T(3.2), 0.5]], [[T(5.4), 0.2]]], { v: 3.2 }),
     pB('QB', 'QB', MID, -2.9, [[T(1.6), -3.6, 0.6], [T(1), -6.6], [T(0.2), -8, 2.0], [T(0.2), -7.6]], { kind: 'drop', v: 5, name: 'Lamar Jackson' }),
     pB('RB', 'RB', MID, -7, [[T(2.6), -4.4], [T(4.2), -2.6]], { kind: 'fake', v: 6, name: 'Derrick Henry' }),
-    pB('Y', 'Y', T(6.6), -1.1, [[T(8.4), 0.4]], { kind: 'block', v: 4 }), pB('U', 'U', T(-6.6), -1.1, [[T(-7.4), 0.2]], { kind: 'block', v: 4 }),
-    pB('X', 'X', 9, -0.9, [[9.4, 12], [16, 22]], { v: 8.2, name: 'Zay Flowers' }), pB('Z', 'Z', 45, -0.9, [[45, 14], [47.4, 21]], { v: 8, name: 'Rashod Bateman' }),
+    pB('Y', 'Y', T(6.6), -1.1, [[T(8.4), 0.4]], { kind: 'block', v: 4 }), pB('U', 'U', T(-6.6), -1.8, [[T(-7.4), 0.2]], { kind: 'block', v: 4 }),
+    pB('X', 'X', 9, -0.9, [[9.4, 12], [16, 22]], { v: 8.2, name: 'Zay Flowers' }), pB('Z', 'Z', 45, -1.6, [[45, 14], [47.4, 21]], { v: 8, name: 'Rashod Bateman' }),
     pOD('E1', 'E', T(-8.4), 0.9, [[T(-6.6), -0.6]], { kind: 'rush', v: 3 }), pOD('T1', 'T', T(-1.1), 0.9, [[T(-0.6), 0.2]], { kind: 'rush', v: 3 }),
     pOD('T2', 'T', T(3.3), 0.9, [[T(3.4), 0.4]], { kind: 'rush', v: 3 }), pOD('E2', 'E', T(8.4), 0.9, [[T(7.6), -0.4]], { kind: 'rush', v: 3 }),
     pOD('W', 'W', T(-3.4), 4.4, [[T(-2.4), 2.6], [T(-3.6), 6.4]], { v: 4 }), pOD('M', 'M', T(1), 4.6, [[T(2), 2.8], [T(1), 6.6]], { v: 4 }),
