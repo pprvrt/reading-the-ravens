@@ -740,11 +740,11 @@ function formation(pers) {
   const uc = pers !== '11' && pers !== '10';
   add('QB', 'QB', MID, uc ? -2.9 : -5, 'Lamar Jackson');
   if (pers === '11') { add('RB', 'RB', T(1.8), -5, 'Derrick Henry'); add('Y', 'Y', T(6.6), -1.1, 'Mark Andrews'); add('X', 'X', 7, -0.9, 'Rashod Bateman'); add('H', 'H', 15.6, -1.6, 'Zay Flowers'); add('Z', 'Z', 46.3, -0.9, "Ja'Kobi Lane"); }
-  if (pers === '10') { add('RB', 'RB', T(1.8), -5, 'Derrick Henry'); add('X', 'X', 7, -0.9); add('H', 'H', 15.6, -1.6, 'Zay Flowers'); add('Y', 'S', 37.6, -1.6); add('Z', 'Z', 46.3, -0.9); }
+  if (pers === '10') { add('RB', 'RB', T(1.8), -5, 'Derrick Henry'); add('X', 'X', 7, -0.9); add('H', 'H', 15.6, -1.6, 'Zay Flowers'); add('Y', 'F', 37.6, -1.6); add('Z', 'Z', 46.3, -0.9); }
   if (pers === '12') { add('RB', 'RB', MID, -7, 'Derrick Henry'); add('Y', 'Y', T(6.6), -1.1, 'Mark Andrews'); add('U', 'U', T(8.8), -2.2, 'Durham Smythe'); add('X', 'X', 9, -0.9, 'Zay Flowers'); add('Z', 'Z', 45, -0.9, 'Rashod Bateman'); }
   if (pers === '21') { add('F', 'FB', MID, -5.1); add('RB', 'RB', MID, -7.4, 'Derrick Henry'); add('Y', 'Y', T(6.6), -1.1, 'Mark Andrews'); add('X', 'X', 9, -0.9, 'Zay Flowers'); add('Z', 'Z', 45, -0.9, 'Rashod Bateman'); }
   if (pers === '22') { add('F', 'FB', MID, -5.1); add('RB', 'RB', MID, -7.4, 'Derrick Henry'); add('Y', 'Y', T(6.6), -1.1, 'Mark Andrews'); add('U', 'U', T(-6.6), -1.1, 'Durham Smythe'); add('Z', 'Z', 44, -0.9, 'Zay Flowers'); }
-  if (pers === '13') { add('RB', 'RB', MID, -7, 'Derrick Henry'); add('Y', 'Y', T(6.6), -1.1, 'Mark Andrews'); add('U', 'U', T(-6.6), -1.1, 'Durham Smythe'); add('W', 'W', T(8.8), -2.2, 'Matthew Hibner'); add('X', 'X', 9, -0.9, 'Zay Flowers'); }
+  if (pers === '13') { add('RB', 'RB', MID, -7, 'Derrick Henry'); add('Y', 'Y', T(6.6), -1.1, 'Mark Andrews'); add('U', 'U', T(-6.6), -1.1, 'Durham Smythe'); add('F', 'F', T(8.8), -2.2, 'Matthew Hibner'); add('X', 'X', 9, -0.9, 'Zay Flowers'); }
   return L;
 }
 function defense(pkg, pers) {
